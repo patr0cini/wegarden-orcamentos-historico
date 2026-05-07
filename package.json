@@ -1,0 +1,12 @@
+{
+  "name": "wegarden-orcamentos",
+  "version": "1.0.0",
+  "description": "We Garden Orçamentos 2026 - API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

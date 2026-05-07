@@ -4,7 +4,8 @@ const https   = require('https');
 const PORT        = process.env.PORT || 3000;
 const GH_TOKEN    = process.env.GH_TOKEN;
 const GH_OWNER    = 'patr0cini';
-const GH_REPO     = 'wegarden-orcamentos-historico';
+const GH_REPO     = 'wegarden-orcamentos';
+
 const CORS = {
   'Access-Control-Allow-Origin':  '*',
   'Access-Control-Allow-Methods': 'GET, PUT, OPTIONS',
@@ -48,7 +49,7 @@ async function readData(file) {
 }
 
 async function writeData(file, data, sha) {
-  const content = Buffer.from(JSON.stringify(data, null, 2)).toString('base64');
+  const content = Buffer.from(JSON.stringify(data, null, 2), 'utf8').toString('base64');
   const r = await ghRequest('PUT', `/repos/${GH_OWNER}/${GH_REPO}/contents/${file}`, {
     message: `update: ${file} ` + new Date().toISOString(),
     content,
@@ -84,7 +85,7 @@ http.createServer(async (req, res) => {
     try {
       const { data } = await readData(file);
       res.writeHead(200, { ...CORS, 'Content-Type': 'application/json' });
-      res.end(JSON.stringify(data));
+      res.end(JSON.stringify({ data }));
     } catch (e) {
       console.error('GET error:', e.message);
       res.writeHead(500, { ...CORS, 'Content-Type': 'application/json' });
@@ -99,8 +100,10 @@ http.createServer(async (req, res) => {
     req.on('end', async () => {
       try {
         const incoming = JSON.parse(body);
+        // Accept both {data: [...]} and plain [...]
+        const arr = Array.isArray(incoming) ? incoming : (incoming.data || incoming);
         const { sha } = await readData(file);
-        await writeData(file, incoming, sha);
+        await writeData(file, arr, sha);
         res.writeHead(200, { ...CORS, 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ ok: true }));
       } catch (e) {

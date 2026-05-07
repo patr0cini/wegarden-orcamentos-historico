@@ -4,8 +4,7 @@ const https   = require('https');
 const PORT        = process.env.PORT || 3000;
 const GH_TOKEN    = process.env.GH_TOKEN;
 const GH_OWNER    = 'patr0cini';
-const GH_REPO     = 'wegarden-orcamentos';
-
+const GH_REPO     = 'wegarden-orcamentos-historico';
 const CORS = {
   'Access-Control-Allow-Origin':  '*',
   'Access-Control-Allow-Methods': 'GET, PUT, OPTIONS',

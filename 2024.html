@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>We Garden · Orçamentos 2024</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #ffffff; --bg2: #f7f6f2; --bg3: #f0efe9;
+    --text: #1a1a18; --text2: #6b6b65; --text3: #a0a09a;
+    --border: rgba(0,0,0,0.10); --border2: rgba(0,0,0,0.18);
+    --accent: #2d6a4f; --accent-light: #e8f5ee; --accent-text: #1b4332;
+    --red-bg: #fdf2f2; --red-text: #8b1c1c;
+    --amber-bg: #fdf6e3; --amber-text: #7a5300;
+    --info-bg: #eef4fd; --info-text: #1a4a8a;
+    --radius: 8px; --radius-lg: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1c1a; --bg2: #252522; --bg3: #2e2e2b;
+      --text: #e8e8e2; --text2: #9a9a92; --text3: #5a5a54;
+      --border: rgba(255,255,255,0.10); --border2: rgba(255,255,255,0.18);
+      --accent: #52b788; --accent-light: #1b3a2d; --accent-text: #95d5b2;
+      --red-bg: #2a1515; --red-text: #f4a4a4;
+      --amber-bg: #2a2010; --amber-text: #f0c060;
+      --info-bg: #0f1f38; --info-text: #90b8f0;
+    }
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg3); color: var(--text); min-height: 100vh; line-height: 1.5; font-size: 14px; }
+
+  /* ── Header ── */
+  .header { background: var(--bg); border-bottom: 0.5px solid var(--border); padding: 0 1.5rem; height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 16px; position: sticky; top: 0; z-index: 50; }
+  .logo-wrap { display: flex; align-items: center; gap: 10px; }
+  .logo-icon { width: 28px; height: 28px; border-radius: 7px; background: var(--accent); display: flex; align-items: center; justify-content: center; }
+  .logo-icon svg { width: 15px; height: 15px; fill: none; stroke: #fff; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .logo-text { font-size: 13px; font-weight: 600; }
+  .logo-sub { font-size: 11px; color: var(--text3); margin-left: 4px; }
+  .header-right { display: flex; align-items: center; gap: 20px; }
+  .header-stats { display: flex; gap: 24px; }
+  .h-stat { text-align: right; }
+  .h-stat-v { font-size: 14px; font-weight: 600; }
+  .h-stat-l { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.04em; }
+  .add-btn { height: 32px; padding: 0 14px; background: var(--accent); color: #fff; border: none; border-radius: var(--radius); font-size: 12px; font-weight: 500; cursor: pointer; font-family: inherit; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+  .add-btn:hover { opacity: 0.88; }
+  .add-btn svg { width: 13px; height: 13px; stroke: #fff; fill: none; stroke-width: 2.5; stroke-linecap: round; }
+
+  /* ── Filters ── */
+  .filters { background: var(--bg); border-bottom: 0.5px solid var(--border); padding: 0.6rem 1.5rem; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; position: sticky; top: 56px; z-index: 40; }
+  .search-wrap { position: relative; flex: 1; min-width: 200px; max-width: 320px; }
+  .search-wrap svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 14px; height: 14px; stroke: var(--text3); fill: none; stroke-width: 2; pointer-events: none; }
+  .search-wrap input { padding-left: 32px; }
+  input, select, textarea { font-family: inherit; font-size: 13px; border: 0.5px solid var(--border2); border-radius: var(--radius); background: var(--bg2); color: var(--text); outline: none; }
+  .filters input, .filters select { height: 32px; padding: 0 10px; width: 100%; }
+  select { padding-right: 28px; appearance: none; cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 8px center; }
+  input:focus, select:focus, textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(82,183,136,0.15); }
+  .filter-sep { width: 1px; height: 20px; background: var(--border); margin: 0 2px; }
+
+  /* ── Table ── */
+  .main { padding: 1.25rem 1.5rem; }
+  .table-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
+  .tbl-wrap { overflow-x: auto; overflow-y: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; table-layout: fixed; }
+  thead th { position: sticky; top: 0; z-index: 10; }
+  th { padding: 9px 12px; text-align: left; font-weight: 500; font-size: 11px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.04em; background: var(--bg2); border-bottom: 0.5px solid var(--border); white-space: nowrap; cursor: pointer; user-select: none; }
+  th:hover { color: var(--text2); }
+  th.sorted { color: var(--accent); }
+  .si { font-size: 9px; margin-left: 2px; opacity: 0.5; }
+  th.sorted .si { opacity: 1; }
+  td { padding: 10px 12px; border-bottom: 0.5px solid var(--border); vertical-align: middle; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: var(--bg2); cursor: pointer; }
+  tr.has-nota td:first-child { border-left: 3px solid var(--accent); padding-left: 9px; }
+  tr.is-new td { background: var(--accent-light) !important; }
+  tr.is-lost td { opacity: 0.45; }
+  tr.is-lost:hover td { opacity: 0.65; background: var(--bg2); }
+  tr.is-lost .name-main { text-decoration: line-through; text-decoration-color: var(--text3); }
+  .col-n{width:40px} .col-oc{width:200px} .col-v{width:110px;text-align:right}
+  td.vc{text-align:right;font-variant-numeric:tabular-nums;font-size:12px;color:var(--text2)}
+  .col-mes{width:80px} .col-req{width:105px} .col-resp{width:60px;text-align:center}
+  .col-c{width:68px;text-align:center} .col-vis{width:55px;text-align:center}
+  .col-adj{width:95px;text-align:center} .col-data{width:90px} .col-grau{width:88px;text-align:center} .col-nota{width:40px;text-align:center}
+  .grau-badge{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:500;white-space:nowrap}
+  .grau-baixo{background:#fdecea;color:#8b1c1c}
+  .grau-medio{background:#fdf6e3;color:#7a5300}
+  .grau-alto{background:#eef4fd;color:#1a4a8a}
+  .grau-muitoalto{background:#e8f5ee;color:#1b4332}
+  .grau-override{background:#f3f0ff;color:#4c1d95}
+  .grau-dot{width:6px;height:6px;border-radius:50%;display:inline-block;flex-shrink:0}
+  .grau-baixo .grau-dot{background:#b91c1c}
+  .grau-medio .grau-dot{background:#d4920a}
+  .grau-alto .grau-dot{background:#1a4a8a}
+  .grau-muitoalto .grau-dot{background:#2d6a4f}
+  .grau-override .grau-dot{background:#4c1d95}
+  td.center{text-align:center}
+  .code-tag{font-size:10px;color:var(--text3);display:block}
+  .badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:500;white-space:nowrap}
+  .b-sim{background:var(--accent-light);color:var(--accent-text)}
+  .b-nao{background:var(--red-bg);color:var(--red-text)}
+  .b-parc{background:var(--amber-bg);color:var(--amber-text)}
+  .b-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--border2)}
+  .b-nota{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;background:var(--info-bg);color:var(--info-text);font-size:9px;font-weight:600}
+  .b-new{display:inline-block;padding:1px 6px;border-radius:20px;font-size:10px;font-weight:600;background:var(--accent);color:#fff;margin-left:4px;vertical-align:middle}
+  .resp-pill{display:inline-block;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:600;background:var(--bg3);color:var(--text2)}
+  .tbl-footer{padding:8px 12px;border-top:0.5px solid var(--border);font-size:11px;color:var(--text3);display:flex;justify-content:space-between;background:var(--bg2)}
+  .empty-row td{padding:2.5rem;text-align:center;color:var(--text3);font-size:13px;cursor:default}
+  .empty-row:hover td{background:none}
+
+  /* ── Overlays ── */
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,0.40);z-index:200;display:none;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(2px)}
+  .overlay.open{display:flex}
+  .panel{background:var(--bg);border-radius:var(--radius-lg);border:0.5px solid var(--border2);width:min(580px,100%);max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.25);animation:su .18s ease}
+  @keyframes su{from{transform:translateY(10px);opacity:0}to{transform:translateY(0);opacity:1}}
+  .panel-hdr{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:1.25rem 1.5rem 1rem;border-bottom:0.5px solid var(--border)}
+  .panel-title{font-size:15px;font-weight:600;line-height:1.35}
+  .panel-sub{font-size:11px;color:var(--text3);margin-top:2px;font-family:monospace}
+  .panel-body{padding:1.25rem 1.5rem}
+  .close-btn{flex-shrink:0;background:var(--bg2);border:0.5px solid var(--border);border-radius:var(--radius);padding:5px 12px;font-size:12px;cursor:pointer;color:var(--text2);font-family:inherit}
+  .close-btn:hover{background:var(--bg3)}
+
+  /* Detail */
+  .valor-big{font-size:26px;font-weight:700;letter-spacing:-0.02em;margin-bottom:1.25rem;padding-bottom:1rem;border-bottom:0.5px solid var(--border)}
+  .valor-big span{font-size:14px;font-weight:400;color:var(--text3);margin-right:4px}
+  .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;margin-bottom:1.25rem}
+  .info-lbl{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:2px}
+  .info-val{font-size:13px}
+  .nota-section{border-top:0.5px solid var(--border);padding-top:1rem}
+  .nota-lbl{font-size:11px;font-weight:500;color:var(--text2);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px}
+  textarea{width:100%;padding:10px 12px;resize:vertical;min-height:90px;line-height:1.55}
+  .nota-actions{display:flex;align-items:center;gap:8px;margin-top:8px}
+  /* Email/envio section */
+  .envio-section{border-top:0.5px solid var(--border);padding-top:1rem;margin-top:0;margin-bottom:1rem}
+  .envio-grid{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:end}
+  .envio-grid .field-full{grid-column:1/-1}
+  .envio-lbl{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:5px}
+  .envio-input{width:100%;height:34px;padding:0 10px}
+  /* Notes history */
+  .hist-list{display:flex;flex-direction:column;gap:8px;margin-bottom:10px}
+  .hist-item{background:var(--bg2);border:0.5px solid var(--border);border-radius:var(--radius);padding:10px 12px}
+  .hist-meta{font-size:10px;color:var(--text3);margin-bottom:4px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .hist-del{background:none;border:none;cursor:pointer;color:var(--text3);font-size:11px;padding:0;line-height:1}
+  .hist-del:hover{color:var(--red-text)}
+  .hist-text{font-size:13px;color:var(--text);white-space:pre-wrap;line-height:1.5}
+  .btn-green{background:var(--accent);color:#fff;border:none;border-radius:var(--radius);padding:7px 16px;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit}
+  .btn-green:hover{opacity:0.88}
+  .btn-ghost{background:none;border:0.5px solid var(--border2);border-radius:var(--radius);padding:7px 12px;font-size:12px;cursor:pointer;color:var(--text3);font-family:inherit}
+  .btn-ghost:hover{color:var(--red-text);border-color:var(--red-text)}
+  .btn-outline{background:var(--bg2);border:0.5px solid var(--border2);border-radius:var(--radius);padding:6px 12px;font-size:12px;cursor:pointer;color:var(--text2);font-family:inherit}
+  .btn-outline:hover{background:var(--bg3)}
+  .btn-danger{background:none;border:0.5px solid var(--red-text);border-radius:var(--radius);padding:6px 12px;font-size:12px;cursor:pointer;color:var(--red-text);font-family:inherit;margin-left:auto}
+  .btn-danger:hover{background:var(--red-bg)}
+  .saved-msg{font-size:11px;color:var(--accent);font-weight:500;opacity:0;transition:opacity .3s}
+  .saved-msg.show{opacity:1}
+
+  /* Form */
+  .form-panel{width:min(640px,100%)}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px}
+  .form-grid .full{grid-column:1/-1}
+  .field label{display:block;font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:5px}
+  .field input,.field select,.field textarea{width:100%;height:36px;padding:0 10px}
+  .field textarea{height:auto;min-height:70px;padding:8px 10px}
+  .form-actions{display:flex;align-items:center;gap:8px;margin-top:1.25rem;padding-top:1rem;border-top:0.5px solid var(--border)}
+
+  /* ── Dashboard ── */
+  .dash-bar{background:var(--bg);border-bottom:0.5px solid var(--border);overflow:hidden;transition:max-height .35s ease,opacity .2s ease;max-height:0;opacity:0}
+  .dash-bar.open{max-height:600px;opacity:1}
+  .dash-inner{padding:1.25rem 1.5rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+  @media(max-width:900px){.dash-inner{grid-template-columns:1fr 1fr}}
+  .dash-card{background:var(--bg2);border:0.5px solid var(--border);border-radius:var(--radius);padding:1rem}
+  .dash-card-title{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:12px;font-weight:500}
+  /* Bar chart */
+  .bar-chart{display:flex;flex-direction:column;gap:6px}
+  .bar-row{display:flex;align-items:center;gap:8px}
+  .bar-label{font-size:11px;color:var(--text2);width:68px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .bar-track{flex:1;height:8px;background:var(--bg3);border-radius:4px;overflow:hidden}
+  .bar-fill{height:100%;border-radius:4px;transition:width .5s ease}
+  .bar-val{font-size:10px;color:var(--text3);min-width:36px;text-align:right;flex-shrink:0}
+  /* KPI row */
+  .kpi-row{display:flex;flex-direction:column;gap:10px}
+  .kpi-item{display:flex;justify-content:space-between;align-items:center}
+  .kpi-name{font-size:12px;color:var(--text2)}
+  .kpi-val{font-size:13px;font-weight:600;color:var(--text)}
+  /* Donut */
+  .donut-wrap{display:flex;align-items:center;gap:12px}
+  .donut-legend{display:flex;flex-direction:column;gap:6px;flex:1}
+  .legend-row{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text2)}
+  .legend-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+  /* Toggle btn */
+  .dash-toggle{height:32px;padding:0 12px;background:none;border:0.5px solid var(--border2);border-radius:var(--radius);font-size:12px;cursor:pointer;color:var(--text2);font-family:inherit;display:flex;align-items:center;gap:5px;white-space:nowrap}
+  .dash-toggle:hover{background:var(--bg2)}
+  .dash-toggle svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2;transition:transform .25s}
+  .dash-toggle.open svg{transform:rotate(180deg)}
+
+  ::-webkit-scrollbar{width:6px;height:6px}
+  ::-webkit-scrollbar-track{background:transparent}
+  ::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+
+  /* ── Lembretes ── */
+  .reminder-banner{background:var(--amber-bg);border-bottom:0.5px solid rgba(122,83,0,0.3);padding:0;max-height:0;overflow:hidden;transition:max-height 0.3s ease;position:sticky;top:56px;z-index:45}
+  .reminder-banner.has-items{max-height:200px}
+  .reminder-inner{padding:8px 1.5rem;display:flex;align-items:flex-start;gap:10px}
+  .reminder-list{display:flex;flex-direction:column;gap:3px;flex:1}
+  .reminder-entry{font-size:12px;color:var(--amber-text);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .reminder-entry.overdue{color:var(--red-text)}
+  .reminder-entry b{font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+  .reminder-dismiss{background:none;border:none;cursor:pointer;color:var(--text3);font-size:16px;padding:0 0 0 8px;line-height:1;flex-shrink:0}
+  /* Lembrete section in detail panel */
+  .lembrete-section{border-top:0.5px solid var(--border);padding-top:1rem}
+  .lembrete-list{display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+  .lembrete-item{background:var(--bg2);border:0.5px solid var(--border);border-radius:var(--radius);padding:8px 10px;display:flex;align-items:flex-start;gap:8px}
+  .lembrete-item.overdue{background:var(--red-bg);border-color:rgba(139,28,28,0.3)}
+  .lembrete-item.today{background:var(--amber-bg);border-color:rgba(122,83,0,0.3)}
+  .lembrete-item.done{opacity:0.45}
+  .lembrete-content{flex:1}
+  .lembrete-date{font-size:10px;color:var(--text3);margin-bottom:2px;text-transform:uppercase;letter-spacing:0.04em}
+  .lembrete-item.overdue .lembrete-date{color:var(--red-text);font-weight:600}
+  .lembrete-item.today .lembrete-date{color:var(--amber-text);font-weight:600}
+  .lembrete-text{font-size:13px;color:var(--text)}
+  .lembrete-btns{display:flex;gap:2px;flex-shrink:0}
+  .lb-btn{background:none;border:none;cursor:pointer;font-size:13px;padding:2px 4px;opacity:0.4;border-radius:4px}
+  .lb-btn:hover{opacity:1;background:var(--bg3)}
+  .lembrete-add-row{display:grid;grid-template-columns:148px 1fr auto;gap:6px;align-items:center;margin-top:6px}
+  .lembrete-add-row input{height:32px;padding:0 8px;font-size:12px;border:0.5px solid var(--border2);border-radius:var(--radius);background:var(--bg2);color:var(--text);font-family:inherit;outline:none}
+  .lembrete-add-row input:focus{border-color:var(--accent)}
+  .lembrete-add-btn{height:32px;padding:0 12px;background:var(--accent);color:#fff;border:none;border-radius:var(--radius);font-size:12px;cursor:pointer;font-family:inherit;white-space:nowrap}
+  .lembrete-add-btn:hover{opacity:0.88}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="logo-wrap">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    </div>
+    <div>
+      <span class="logo-text">We Garden</span>
+      <span class="logo-sub">Orçamentos 2024</span>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="header-stats">
+      <div class="h-stat"><div class="h-stat-v" id="s-total">—</div><div class="h-stat-l">Total orçamentado</div></div>
+      <div class="h-stat"><div class="h-stat-v" id="s-count">—</div><div class="h-stat-l">Orçamentos</div></div>
+      <div class="h-stat"><div class="h-stat-v" id="s-adj">—</div><div class="h-stat-l">Adjudicados</div></div>
+    </div>
+    <button class="add-btn" onclick="openForm()">
+      <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      Novo orçamento
+    </button>
+    <button class="dash-toggle" id="dash-toggle-btn" onclick="toggleDash()">
+      <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      Dashboard
+    </button>
+    <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text3)">
+      <span id="sync-dot" style="width:7px;height:7px;border-radius:50%;background:var(--text3);flex-shrink:0;transition:background .3s"></span>
+      <span id="sync-label">a iniciar...</span>
+    </div>
+  </div>
+</header>
+
+<!-- Reminder banner -->
+<div class="reminder-banner" id="reminder-banner">
+  <div class="reminder-inner">
+    <span style="font-size:16px;flex-shrink:0">🔔</span>
+    <div class="reminder-list" id="reminder-list"></div>
+    <button class="reminder-dismiss" onclick="dismissBanner()" title="Fechar">×</button>
+  </div>
+</div>
+
+<!-- Dashboard panel -->
+<div class="dash-bar" id="dash-bar">
+  <div class="dash-inner">
+
+    <!-- Card 1: Valor por mês -->
+    <div class="dash-card" style="grid-column:span 2">
+      <div class="dash-card-title">Valor orçamentado por mês</div>
+      <div class="bar-chart" id="d-meses"></div>
+    </div>
+
+    <!-- Card 2: Por responsável -->
+    <div class="dash-card">
+      <div class="dash-card-title">Valor por responsável</div>
+      <div class="bar-chart" id="d-resps"></div>
+    </div>
+
+    <!-- Card 3: Grau de interesse -->
+    <div class="dash-card">
+      <div class="dash-card-title">Distribuição por grau</div>
+      <div class="donut-wrap">
+        <svg id="d-donut" width="80" height="80" viewBox="0 0 80 80"></svg>
+        <div class="donut-legend" id="d-donut-legend"></div>
+      </div>
+    </div>
+
+    <!-- Card 4: KPIs adjudicação -->
+    <div class="dash-card">
+      <div class="dash-card-title">Taxa de adjudicação</div>
+      <div class="kpi-row" id="d-adj"></div>
+    </div>
+
+    <!-- Card 5: Top 5 orçamentos -->
+    <div class="dash-card" style="grid-column:span 3">
+      <div class="dash-card-title">Top 5 orçamentos por valor</div>
+      <div class="bar-chart" id="d-top5"></div>
+    </div>
+
+  </div>
+</div>
+
+<div class="filters">
+  <div class="search-wrap">
+    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" id="search" placeholder="Pesquisar nome, requerente...">
+  </div>
+  <div class="filter-sep"></div>
+  <select id="f-mes" style="width:130px"><option value="">Todos os meses</option></select>
+  <select id="f-resp" style="width:130px"><option value="">Todos os responsáveis</option></select>
+  <select id="f-adj" style="width:150px">
+    <option value="">Todos os estados</option>
+    <option value="Sim">Adjudicado</option>
+    <option value="Não">Não adjudicado</option>
+    <option value="Parcialmente">Parcialmente</option>
+    <option value="_vazio">Em aberto</option>
+  </select>
+  <select id="f-grau" style="width:130px">
+    <option value="">Todos os graus</option>
+    <option value="Baixo">Baixo</option>
+    <option value="Médio">Médio</option>
+    <option value="Alto">Alto</option>
+    <option value="Muito Alto">Muito Alto</option>
+    <option value="_top10">Top 10 valor</option>
+  </select>
+</div>
+
+<main class="main">
+  <div class="table-card">
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr>
+          <th class="col-n"    onclick="sortBy('id')"># <span class="si">↕</span></th>
+          <th class="col-oc"   onclick="sortBy('nome')">Orçamento <span class="si">↕</span></th>
+          <th class="col-v"    onclick="sortBy('valor')" style="text-align:right">Valor <span class="si">↕</span></th>
+          <th class="col-mes"  onclick="sortBy('mes')">Mês <span class="si">↕</span></th>
+          <th class="col-grau" onclick="sortBy('_grauScore')" style="text-align:center">Interesse <span class="si">↕</span></th>
+          <th class="col-req"  onclick="sortBy('requerente')">Requerente <span class="si">↕</span></th>
+          <th class="col-resp" onclick="sortBy('responsavel')" style="text-align:center">Resp. <span class="si">↕</span></th>
+          <th class="col-c"    style="text-align:center">Concurso</th>
+          <th class="col-vis"  style="text-align:center">Visita</th>
+          <th class="col-adj"  onclick="sortBy('adjudicado')" style="text-align:center">Adjudicado <span class="si">↕</span></th>
+          <th class="col-data" onclick="sortBy('dataArranque')">Arranque <span class="si">↕</span></th>
+          <th class="col-nota" style="text-align:center">Nota</th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <div class="tbl-footer">
+      <span id="f-count">—</span>
+      <span>Clique para ver detalhes · Duplo clique para editar</span>
+    </div>
+  </div>
+</main>
+
+<!-- Detail overlay -->
+<div class="overlay" id="ov-detail" onclick="ovClick(event,'ov-detail')">
+  <div class="panel">
+    <div class="panel-hdr">
+      <div>
+        <div class="panel-sub" id="p-code"></div>
+        <div class="panel-title" id="p-title"></div>
+      </div>
+      <div style="display:flex;gap:6px">
+        <button class="btn-outline" onclick="editFromDetail()">Editar</button>
+        <button class="close-btn" onclick="closeOv('ov-detail')">✕</button>
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="valor-big" id="p-valor"></div>
+      <div class="info-grid" id="p-info"></div>
+
+      <!-- Envio -->
+      <div class="envio-section">
+        <div class="nota-lbl">Envio do orçamento</div>
+        <div class="envio-grid">
+          <div>
+            <div class="envio-lbl">Email destinatário</div>
+            <input type="text" id="envio-email" class="envio-input" placeholder="email@empresa.com">
+          </div>
+          <div>
+            <div class="envio-lbl">Data de envio</div>
+            <input type="date" id="envio-data" class="envio-input" style="width:140px">
+          </div>
+        </div>
+        <div style="margin-top:8px">
+          <button class="btn-green" onclick="saveEnvio()" style="padding:6px 14px;font-size:12px">Guardar envio</button>
+          <span class="saved-msg" id="envio-msg" style="margin-left:8px">✓ Guardado</span>
+        </div>
+      </div>
+
+      <!-- Lembretes -->
+      <div class="lembrete-section">
+        <div class="nota-lbl" style="margin-bottom:8px">Lembretes</div>
+        <div id="lembrete-list" class="lembrete-list"></div>
+        <div class="lembrete-add-row">
+          <input type="date" id="lembrete-data" min="">
+          <input type="text" id="lembrete-texto" placeholder="O que fazer neste dia...">
+          <button class="lembrete-add-btn" onclick="addLembrete()">+ Adicionar</button>
+        </div>
+      </div>
+
+      <!-- Histórico de notas -->
+      <div class="nota-section">
+        <div class="nota-lbl">Notas internas</div>
+        <div id="hist-list" class="hist-list"></div>
+        <textarea id="nota-ta" placeholder="Escrever nova nota..."></textarea>
+        <div class="nota-actions">
+          <button class="btn-green" onclick="saveNota()">Adicionar nota</button>
+          <span class="saved-msg" id="saved-msg">✓ Guardado</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Form overlay -->
+<div class="overlay" id="ov-form" onclick="ovClick(event,'ov-form')">
+  <div class="panel form-panel">
+    <div class="panel-hdr">
+      <div>
+        <div class="panel-title" id="form-ttl">Novo orçamento</div>
+        <div class="panel-sub" id="form-sub"></div>
+      </div>
+      <button class="close-btn" onclick="closeOv('ov-form')">✕</button>
+    </div>
+    <div class="panel-body">
+      <div class="form-grid">
+        <div class="field full">
+          <label>Nome do orçamento *</label>
+          <input type="text" id="fi-nome" placeholder="ocWG26_077 Nome do Projeto - Local" style="height:36px;width:100%;padding:0 10px">
+        </div>
+        <div class="field">
+          <label>Valor (€)</label>
+          <input type="number" id="fi-valor" placeholder="0.00" step="0.01" min="0" style="height:36px;width:100%;padding:0 10px">
+        </div>
+        <div class="field">
+          <label>Mês</label>
+          <select id="fi-mes" style="height:36px;width:100%">
+            <option value="">— selecionar —</option>
+            <option>Janeiro</option><option>Fevereiro</option><option>Março</option>
+            <option>Abril</option><option>Maio</option><option>Junho</option>
+            <option>Julho</option><option>Agosto</option><option>Setembro</option>
+            <option>Outubro</option><option>Novembro</option><option>Dezembro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Requerente</label>
+          <input type="text" id="fi-req" placeholder="Empresa ou pessoa" style="height:36px;width:100%;padding:0 10px">
+        </div>
+        <div class="field">
+          <label>Responsável Comercial</label>
+          <select id="fi-resp" style="height:36px;width:100%">
+            <option value="">— nenhum —</option>
+            <option>JP</option><option>BP</option><option>MP</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Concurso?</label>
+          <select id="fi-conc" style="height:36px;width:100%">
+            <option value="">—</option><option>Sim</option><option>Não</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Visita à obra?</label>
+          <select id="fi-vis" style="height:36px;width:100%">
+            <option value="">—</option><option>Sim</option><option>Não</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Adjudicado?</label>
+          <select id="fi-adj" style="height:36px;width:100%">
+            <option value="">Em aberto</option>
+            <option>Sim</option><option>Não</option><option>Parcialmente</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Email de envio</label>
+          <input type="text" id="fi-email" placeholder="email@empresa.com" style="height:36px;width:100%;padding:0 10px">
+        </div>
+        <div class="field">
+          <label>Data de envio</label>
+          <input type="date" id="fi-dataenvio" style="height:36px;width:100%;padding:0 10px">
+        </div>
+        <div class="field">
+          <label>Data prevista de arranque</label>
+          <input type="text" id="fi-data" placeholder="ex: Julho 2026" style="height:36px;width:100%;padding:0 10px">
+        </div>
+        <div class="field">
+          <label>Grau de interesse <span style="font-weight:400;text-transform:none;letter-spacing:0">(auto se vazio)</span></label>
+          <select id="fi-grau" style="height:36px;width:100%">
+            <option value="">— calcular automaticamente —</option>
+            <option>Baixo</option><option>Médio</option><option>Alto</option><option>Muito Alto</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label>Notas</label>
+          <textarea id="fi-notas" placeholder="Contactos, estado, observações..." style="height:auto;min-height:70px;padding:8px 10px;width:100%"></textarea>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button class="btn-outline" onclick="closeOv('ov-form')">Cancelar</button>
+        <button class="btn-green" onclick="submitForm()">Guardar</button>
+        <button class="btn-danger" id="btn-del" onclick="deleteRec()" style="display:none">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const MESES = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+let DATA=[], sortCol='id', sortAsc=true, activeId=null, editingId=null;
+
+/* ══════════════════════════════════════════
+   API CONFIG — URL do servidor no Render
+   ══════════════════════════════════════════ */
+const API_URL   = 'https://wegarden-historico.onrender.com';
+const API_YEAR  = '2024';
+const CONFIGURED = API_URL !== 'COLE_AQUI_O_URL_DO_RENDER';
+
+/* ── Sync state ── */
+let syncTimer = null;
+let lastHash  = null;
+
+function setSyncStatus(state, msg){
+  const dot   = document.getElementById('sync-dot');
+  const label = document.getElementById('sync-label');
+  if(!dot) return;
+  const colors = {ok:'#2d6a4f', saving:'#d4920a', error:'#b91c1c', offline:'#a0a09a'};
+  dot.style.background = colors[state] || colors.offline;
+  dot.style.animation  = state === 'saving' ? 'pulse 1s infinite' : 'none';
+  label.textContent    = msg;
+}
+
+function hashData(d){ return JSON.stringify(d).length + '_' + (d[0]?.id||0) + '_' + (d[d.length-1]?.id||0); }
+
+/* ── Load from Render API ── */
+async function load(){
+  if(!CONFIGURED){
+    try{ const s=localStorage.getItem('wg24'); if(s){ DATA=JSON.parse(s); render(); sizeTable(); return; } }catch{}
+    DATA = SEED.map(r=>({...r}));
+    render(); sizeTable();
+    setSyncStatus('offline','modo local');
+    return;
+  }
+  setSyncStatus('saving','a carregar...');
+  try{
+    const res = await fetch(API_URL + '/2024/data');
+    if(!res.ok) throw new Error('HTTP ' + res.status);
+    const json = await res.json();
+    DATA = json.data || [];
+    lastHash = hashData(DATA);
+    // If server has no data yet, push the seed
+    if(DATA.length === 0){
+      DATA = SEED.map(r=>({...r}));
+      await pushData();
+    }
+    render(); sizeTable();
+    setSyncStatus('ok', 'sincronizado');
+    renderReminderBanner();
+  } catch(e){
+    setSyncStatus('error','erro ao carregar — a usar dados locais');
+    try{ const s=localStorage.getItem('wg24'); if(s){ DATA=JSON.parse(s); render(); sizeTable(); } }catch{}
+  }
+}
+
+/* ── Save to Render API (debounced 800ms) ── */
+async function pushData(){
+  const res = await fetch(API_URL + '/2024/data', {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ data: DATA })
+  });
+  if(!res.ok) throw new Error('HTTP ' + res.status);
+  lastHash = hashData(DATA);
+}
+
+function persist(){
+  try{ localStorage.setItem('wg24', JSON.stringify(DATA)); }catch{}
+  if(!CONFIGURED){ render(); return; }
+  setSyncStatus('saving','a guardar...');
+  clearTimeout(syncTimer);
+  syncTimer = setTimeout(async () => {
+    try{
+      await pushData();
+      const t = new Date().toLocaleTimeString('pt-PT',{hour:'2-digit',minute:'2-digit'});
+      setSyncStatus('ok', 'guardado · ' + t);
+    } catch(e){
+      setSyncStatus('error','erro ao guardar — dados guardados localmente');
+    }
+  }, 800);
+}
+
+/* ── Poll for changes from other users every 30s ── */
+setInterval(async () => {
+  if(!CONFIGURED) return;
+  if(document.getElementById('ov-detail').classList.contains('open')) return;
+  if(document.getElementById('ov-form').classList.contains('open')) return;
+  try{
+    const res = await fetch(API_URL + '/2024/data');
+    if(!res.ok) return;
+    const json = await res.json();
+    const newHash = hashData(json.data || []);
+    if(newHash !== lastHash){
+      DATA = json.data || [];
+      lastHash = newHash;
+      render();
+      renderReminderBanner();
+      const t = new Date().toLocaleTimeString('pt-PT',{hour:'2-digit',minute:'2-digit'});
+      setSyncStatus('ok', 'atualizado · ' + t);
+    }
+  } catch{}
+}, 30000);
+
+function nextId(){ return DATA.length ? Math.max(...DATA.map(r=>r.id))+1 : 1; }
+
+const fmt = v => (v!=null&&v!=='') ? new Intl.NumberFormat('pt-PT',{style:'currency',currency:'EUR',maximumFractionDigits:2}).format(v) : '—';
+function yesno(v){ const s=(v||'').toLowerCase(); if(s==='sim') return '<span class="badge b-sim">Sim</span>'; if(s==='não'||s==='nao') return '<span class="badge b-nao">Não</span>'; return '<span class="b-dot"></span>'; }
+function adjB(v){ if(!v) return '<span class="b-dot"></span>'; const s=v.toLowerCase(); if(s==='sim') return '<span class="badge b-sim">Sim</span>'; if(s==='não'||s==='nao') return '<span class="badge b-nao">Não</span>'; if(s==='parcialmente') return '<span class="badge b-parc">Parcialmente</span>'; return `<span class="badge" style="background:var(--bg3);color:var(--text2)">${v}</span>`; }
+function isNew(r){ return r.addedAt && (Date.now()-new Date(r.addedAt).getTime()) < 7*24*3600*1000; }
+
+/* ── Grau de Interesse ── */
+function calcGrauScore(r){
+  // Se houver override manual, usa-o
+  if(r.grauOverride) return {score: r.grauOverride==='Baixo'?0:r.grauOverride==='Médio'?2:r.grauOverride==='Alto'?3:5, override:true};
+  let pts=0;
+  // Valor da obra (0-3)
+  const v=r.valor||0;
+  if(v>=100000) pts+=3; else if(v>=50000) pts+=2; else if(v>=10000) pts+=1;
+  // Concurso (0-1): Não = +1
+  if((r.concurso||'').toLowerCase()==='não') pts+=1;
+  // Data de arranque (0-2)
+  if(r.dataArranque){
+    const mMap={janeiro:0,fevereiro:1,março:2,marco:2,abril:3,maio:4,junho:5,julho:6,agosto:7,setembro:8,outubro:9,novembro:10,dezembro:11};
+    const str=r.dataArranque.toLowerCase();
+    let mesIdx=-1, ano=2026;
+    for(const [k,v2] of Object.entries(mMap)){ if(str.includes(k)){mesIdx=v2;break;} }
+    const m=str.match(/20\d\d/); if(m) ano=parseInt(m[0]);
+    if(mesIdx>=0){
+      const target=new Date(ano,mesIdx,1);
+      const diffMs=target-Date.now();
+      const diffMeses=diffMs/(1000*60*60*24*30);
+      if(diffMeses<=6) pts+=2; else pts+=1;
+    }
+  }
+  return {score:pts, override:false};
+}
+function grauLabel(score){ if(score<=1) return 'Baixo'; if(score===2) return 'Médio'; if(score<=4) return 'Alto'; return 'Muito Alto'; }
+function grauClass(label){ return {Baixo:'grau-baixo',Médio:'grau-medio',Alto:'grau-alto','Muito Alto':'grau-muitoalto'}[label]||'grau-baixo'; }
+function grauBadge(r){
+  const {score,override}=calcGrauScore(r);
+  const label=override?r.grauOverride:grauLabel(score);
+  const cls=override?'grau-override':grauClass(label);
+  return `<span class="grau-badge ${cls}"><span class="grau-dot"></span>${label}</span>`;
+}
+
+function getFiltered(){
+  const q=(document.getElementById('search').value||'').toLowerCase();
+  const fM=document.getElementById('f-mes').value, fR=document.getElementById('f-resp').value, fA=document.getElementById('f-adj').value, fG=document.getElementById('f-grau').value;
+  return DATA.filter(r=>{
+    if(q && !r.nome.toLowerCase().includes(q) && !(r.requerente||'').toLowerCase().includes(q) && !(r.responsavel||'').toLowerCase().includes(q)) return false;
+    if(fM && r.mes!==fM) return false;
+    if(fR && r.responsavel!==fR) return false;
+    if(fA==='_vazio' && r.adjudicado) return false;
+    if(fA && fA!=='_vazio' && r.adjudicado!==fA) return false;
+    if(fG==='_top10'){
+      const top10ids=new Set([...DATA].sort((a,b)=>(b.valor||0)-(a.valor||0)).slice(0,10).map(r=>r.id));
+      if(!top10ids.has(r.id)) return false;
+    } else if(fG){ const {score,override}=calcGrauScore(r); const lbl=override?r.grauOverride:grauLabel(score); if(lbl!==fG) return false; }
+    return true;
+  });
+}
+function getSorted(arr){
+  return [...arr].sort((a,b)=>{
+    let av=a[sortCol],bv=b[sortCol];
+    if(sortCol==='mes'){av=MESES.indexOf(a.mes);bv=MESES.indexOf(b.mes);}
+    if(sortCol==='_grauScore'){av=calcGrauScore(a).score;bv=calcGrauScore(b).score;}
+    if(typeof av==='number'&&typeof bv==='number') return sortAsc?av-bv:bv-av;
+    return sortAsc?(av||'').toString().localeCompare((bv||'').toString(),'pt'):(bv||'').toString().localeCompare((av||'').toString(),'pt');
+  });
+}
+function sortBy(col){ if(sortCol===col) sortAsc=!sortAsc; else{sortCol=col;sortAsc=true;} render(); }
+
+function initFilters(){
+  const mS=document.getElementById('f-mes'), cM=mS.value;
+  mS.innerHTML='<option value="">Todos os meses</option>';
+  MESES.filter(m=>DATA.some(r=>r.mes===m)).forEach(m=>{ const o=document.createElement('option'); o.value=m; o.textContent=m; if(m===cM) o.selected=true; mS.appendChild(o); });
+  const rS=document.getElementById('f-resp'), cR=rS.value;
+  rS.innerHTML='<option value="">Todos os responsáveis</option>';
+  [...new Set(DATA.map(r=>r.responsavel).filter(Boolean))].sort().forEach(r=>{ const o=document.createElement('option'); o.value=r; o.textContent=r; if(r===cR) o.selected=true; rS.appendChild(o); });
+}
+
+function render(){
+  initFilters();
+  const f=getFiltered(), s=getSorted(f);
+  const tot=f.reduce((a,r)=>a+(r.valor||0),0);
+  const adj=f.filter(r=>(r.adjudicado||'').toLowerCase()==='sim').length;
+  document.getElementById('s-total').textContent=fmt(tot);
+  document.getElementById('s-count').textContent=f.length;
+  document.getElementById('s-adj').textContent=adj;
+  document.getElementById('f-count').textContent=f.length+' orçamentos';
+  const tbody=document.getElementById('tbody');
+  if(!s.length){ tbody.innerHTML='<tr class="empty-row"><td colspan="12">Nenhum orçamento encontrado</td></tr>'; return; }
+  tbody.innerHTML=s.map(r=>{
+    const hasN=(r.notasHist&&r.notasHist.length>0)||!!(r.notas&&r.notas.trim()), novo=isNew(r);
+    const isLost=(r.adjudicado||'').toLowerCase()==='não'||r.adjudicado==='Não';
+    const code=(r.nome.match(/^(ocWG\S+)/)||[])[1]||'';
+    const nm=r.nome.replace(/^ocWG\S+\s*/,'').trim();
+    const req=(r.requerente||'').length>16?r.requerente.slice(0,15)+'…':(r.requerente||'');
+    return `<tr onclick="openDetail(${r.id})" ondblclick="openForm(${r.id})" class="${hasN?'has-nota ':''}${novo?'is-new':''}${isLost?' is-lost':''}">
+      <td style="color:var(--text3);font-size:11px">${r.id}</td>
+      <td title="${r.nome}"><span class="code-tag">${code}</span><span>${nm}${novo?'<span class="b-new">novo</span>':''}</span></td>
+      <td class="vc">${r.valor?fmt(r.valor):'—'}</td>
+      <td style="color:var(--text2)">${r.mes||'—'}</td>
+      <td class="center">${grauBadge(r)}</td>
+      <td title="${r.requerente||''}" style="color:var(--text2)">${req||'—'}</td>
+      <td class="center">${r.responsavel?`<span class="resp-pill">${r.responsavel}</span>`:'<span class="b-dot"></span>'}</td>
+      <td class="center">${yesno(r.concurso)}</td>
+      <td class="center">${yesno(r.visita)}</td>
+      <td class="center">${adjB(r.adjudicado)}</td>
+      <td style="color:var(--text2);font-size:12px">${r.dataArranque||'—'}</td>
+      <td class="center">${hasN?'<span class="b-nota">N</span>':'<span style="color:var(--text3);font-size:10px">—</span>'}</td>
+    </tr>`;
+  }).join('');
+}
+
+function fmtDate(iso){ if(!iso) return '—'; try{ return new Date(iso).toLocaleDateString('pt-PT'); }catch{return iso;} }
+function fmtDateTime(iso){ if(!iso) return ''; try{ const d=new Date(iso); return d.toLocaleDateString('pt-PT')+' '+d.toLocaleTimeString('pt-PT',{hour:'2-digit',minute:'2-digit'}); }catch{return iso;} }
+
+function renderHist(r){
+  const hist=r.notasHist||[];
+  // Migrate legacy notas string
+  const items=[...hist];
+  const el=document.getElementById('hist-list');
+  if(!items.length){ el.innerHTML='<div style="font-size:12px;color:var(--text3);padding:4px 0 8px">Sem notas ainda.</div>'; return; }
+  el.innerHTML=items.slice().reverse().map((n,ri)=>{
+    const idx=items.length-1-ri;
+    return `<div class="hist-item">
+      <div class="hist-meta">
+        <span>${fmtDateTime(n.at)}</span>
+        <button class="hist-del" onclick="deleteNota(${idx})" title="Eliminar nota">✕</button>
+      </div>
+      <div class="hist-text">${n.texto.replace(/</g,'&lt;')}</div>
+    </div>`;
+  }).join('');
+}
+
+function openDetail(id){
+  activeId=id; const r=DATA.find(d=>d.id===id); if(!r) return;
+  // migrate old flat notas to history if needed
+  if(r.notas && !(r.notasHist&&r.notasHist.length)){
+    r.notasHist=[{texto:r.notas, at: r.addedAt||new Date().toISOString()}];
+    r.notas=''; persist();
+  }
+  const code=(r.nome.match(/^(ocWG\S+)/)||[])[1]||'';
+  document.getElementById('p-code').textContent=code;
+  document.getElementById('p-title').textContent=r.nome.replace(/^ocWG\S+\s*/,'').trim();
+  document.getElementById('p-valor').innerHTML=r.valor
+    ?`<span>€</span>${new Intl.NumberFormat('pt-PT',{maximumFractionDigits:2}).format(r.valor)}`
+    :'<span style="color:var(--text3);font-size:14px;font-weight:400">Sem valor definido</span>';
+  const {score,override}=calcGrauScore(r);
+  const grauLbl=override?r.grauOverride:grauLabel(score);
+  const fs=[
+    ['Mês',r.mes||'—'],['Requerente',r.requerente||'—'],
+    ['Responsável Comercial',r.responsavel||'—'],['Concurso?',r.concurso||'—'],
+    ['Visita à obra?',r.visita||'—'],['Adjudicado?',r.adjudicado||'—'],
+    ['Data Prevista de Arranque',r.dataArranque||'—'],
+    ['Grau de Interesse',grauLbl+(override?' (manual)':` (automático · ${score} pts)`)],
+    ...(r.addedAt?[['Adicionado em',fmtDate(r.addedAt)]]:[]),
+  ];
+  document.getElementById('p-info').innerHTML=fs.map(([l,v])=>`<div><div class="info-lbl">${l}</div><div class="info-val">${v}</div></div>`).join('');
+  // Envio
+  document.getElementById('envio-email').value=r.emailEnvio||'';
+  document.getElementById('envio-data').value=r.dataEnvio||'';
+  document.getElementById('envio-msg').classList.remove('show');
+  // Lembretes
+  document.getElementById('lembrete-data').min = todayStr();
+  renderLembretes(r);
+  // Notas
+  renderHist(r);
+  document.getElementById('nota-ta').value='';
+  document.getElementById('saved-msg').classList.remove('show');
+  document.getElementById('ov-detail').classList.add('open');
+  setTimeout(()=>document.getElementById('nota-ta').focus(),100);
+}
+
+function saveEnvio(){
+  if(activeId===null) return;
+  const r=DATA.find(d=>d.id===activeId); if(!r) return;
+  r.emailEnvio=document.getElementById('envio-email').value.trim();
+  r.dataEnvio=document.getElementById('envio-data').value;
+  persist();
+  const m=document.getElementById('envio-msg'); m.classList.add('show'); setTimeout(()=>m.classList.remove('show'),2200);
+}
+
+function saveNota(){
+  if(activeId===null) return;
+  const r=DATA.find(d=>d.id===activeId); if(!r) return;
+  const txt=document.getElementById('nota-ta').value.trim();
+  if(!txt) return;
+  if(!r.notasHist) r.notasHist=[];
+  r.notasHist.push({texto:txt, at:new Date().toISOString()});
+  persist(); render(); renderHist(r);
+  document.getElementById('nota-ta').value='';
+  const m=document.getElementById('saved-msg'); m.classList.add('show'); setTimeout(()=>m.classList.remove('show'),2200);
+}
+
+function deleteNota(idx){
+  const r=DATA.find(d=>d.id===activeId); if(!r||!r.notasHist) return;
+  if(!confirm('Eliminar esta nota?')) return;
+  r.notasHist.splice(idx,1);
+  persist(); render(); renderHist(r);
+}
+function editFromDetail(){ closeOv('ov-detail'); openForm(activeId); }
+
+function openForm(id=null){
+  editingId=id; const isE=id!==null;
+  document.getElementById('form-ttl').textContent=isE?'Editar orçamento':'Novo orçamento';
+  document.getElementById('btn-del').style.display=isE?'block':'none';
+  if(isE){
+    const r=DATA.find(d=>d.id===id); if(!r) return;
+    document.getElementById('form-sub').textContent=r.nome;
+    document.getElementById('fi-nome').value=r.nome;
+    document.getElementById('fi-valor').value=r.valor||'';
+    document.getElementById('fi-mes').value=r.mes||'';
+    document.getElementById('fi-req').value=r.requerente||'';
+    document.getElementById('fi-resp').value=r.responsavel||'';
+    document.getElementById('fi-conc').value=r.concurso||'';
+    document.getElementById('fi-vis').value=r.visita||'';
+    document.getElementById('fi-adj').value=r.adjudicado||'';
+    document.getElementById('fi-data').value=r.dataArranque||'';
+    document.getElementById('fi-email').value=r.emailEnvio||'';
+    document.getElementById('fi-dataenvio').value=r.dataEnvio||'';
+    document.getElementById('fi-grau').value=r.grauOverride||'';
+    document.getElementById('fi-notas').value=r.notas||'';
+  } else {
+    document.getElementById('form-sub').textContent='';
+    ['fi-nome','fi-req','fi-data','fi-email','fi-dataenvio','fi-notas'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('fi-valor').value='';
+    ['fi-mes','fi-resp','fi-conc','fi-vis','fi-adj','fi-grau'].forEach(id=>document.getElementById(id).value='');
+  }
+  document.getElementById('ov-form').classList.add('open');
+  setTimeout(()=>document.getElementById('fi-nome').focus(),100);
+}
+function submitForm(){
+  const nome=document.getElementById('fi-nome').value.trim();
+  if(!nome){ document.getElementById('fi-nome').style.borderColor='var(--red-text)'; document.getElementById('fi-nome').focus(); return; }
+  document.getElementById('fi-nome').style.borderColor='';
+  const vr=document.getElementById('fi-valor').value;
+  const rec={ nome, valor:vr!==''?parseFloat(vr):null, mes:document.getElementById('fi-mes').value, requerente:document.getElementById('fi-req').value.trim(), responsavel:document.getElementById('fi-resp').value, concurso:document.getElementById('fi-conc').value, visita:document.getElementById('fi-vis').value, adjudicado:document.getElementById('fi-adj').value, dataArranque:document.getElementById('fi-data').value.trim(), emailEnvio:document.getElementById('fi-email').value.trim(), dataEnvio:document.getElementById('fi-dataenvio').value, grauOverride:document.getElementById('fi-grau').value, notas:document.getElementById('fi-notas').value.trim() };
+  if(editingId!==null){ const i=DATA.findIndex(d=>d.id===editingId); if(i!==-1) DATA[i]={...DATA[i],...rec}; }
+  else { DATA.push({id:nextId(), addedAt:new Date().toISOString(), ...rec}); }
+  persist(); render(); closeOv('ov-form');
+}
+function deleteRec(){
+  if(editingId===null) return;
+  const r=DATA.find(d=>d.id===editingId);
+  if(!confirm(`Eliminar "${r?.nome}"?\n\nEsta ação não pode ser desfeita.`)) return;
+  DATA=DATA.filter(d=>d.id!==editingId); persist(); render(); closeOv('ov-form');
+}
+
+function ovClick(e,id){ if(e.target===document.getElementById(id)) closeOv(id); }
+function closeOv(id){ document.getElementById(id).classList.remove('open'); }
+
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){ closeOv('ov-detail'); closeOv('ov-form'); }
+  if((e.ctrlKey||e.metaKey)&&e.key==='s'){
+    e.preventDefault();
+    if(document.getElementById('ov-form').classList.contains('open')) submitForm();
+    else if(document.getElementById('ov-detail').classList.contains('open')) saveNota();
+  }
+});
+document.getElementById('search').addEventListener('input',render);
+document.getElementById('f-mes').addEventListener('change',render);
+document.getElementById('f-adj').addEventListener('change',render);
+document.getElementById('f-grau').addEventListener('change',render);
+document.getElementById('f-resp').addEventListener('change',render);
+
+const SEED=[{"id": 1, "nome": "ocWG24_065 Parque Urbano Corroios - Seixal", "valor": 1343206.2, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "compras@pragosa.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 2, "nome": "ocWG24_011 HILTON CASCAIS HOTEL & RESIDANCE", "valor": 778420.57, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jmr@teixeiraduarte.com, duarte.nunes@mota-engil.pt, manuel.pedrosa@constructorasanjose.com. Pedi Proposta Landlab a 11/01/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 3, "nome": "ocWG24_095 Sobreiras Altas,Grândola", "valor": 728112.1, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "vitor.mendes@fccco.com. Pedi cotação Landlab a 03/04/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 4, "nome": "ocWG24_033 THE PARK RESIDENCES CASCAIS", "valor": 671520.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Iniciado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "manuel.pedrosa@constructorasanjose.com. Pedi cotação Planta Livre (8/2/24)", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 5, "nome": "ocWG24_034 ALMA GARDENS - Lotes 5, 6, 7 e 8 - Oeiras", "valor": 642144.19, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "joana.goncalves@construtoraudra.pt e rmendes@perene.pt. Pedi cotação Landlab a 31/01/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 6, "nome": "ocWG24_004 Great Flags - ERPI Cascais", "valor": 504515.61, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "luana.soares@grupo-aca.com | Diretor de obra António Madeira 961112563 | Liguei em 2 de Março, Liguei a 29 de Abril, Ligar  em final  de Maio, projeto em revisão", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 7, "nome": "ocWG24_041 Escola Básica e Secundária IBN Mucana", "valor": 491559.25, "mes": "", "requerente": "Tecnorem", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carlos.silva@tecnorem.pt e claudiamagalhaes@tps.com.pt e goncalo.pinto@atlantinivel.pt e dferreira@graviner.pt | Falei com Ricardino em 16/02/26 | SAMIC", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 8, "nome": "ocWG24_012 Av. da República 5-7 Pacote 4.2 e 6", "valor": 490065.01, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "José Peixoto-KTL e cesar.lopes@transforgroup.com.Pedi proposta Landlab 30/6/23). Falta cotação VVLourenço. Enviado por Bernardo em 6/7/23.Passou de 2024-Jorge Baltazar KTL. | Ganhou Jardins do Paço", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 9, "nome": "ocWG24_244 Marinha Living-Rua Eucaliptais", "valor": 474560.52, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "joao.amaro@veyel.pt e jorge.torrao@planirest.pt. Pedi Proposta Landlab a 24/09/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 10, "nome": "ocWG24_160 Aeroporto Humberto Delgado Lisboa (AHD) Plano de Melhoria Operacional Pier", "valor": 472076.18, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "gbm@teixeiraduarte.com, joao.branco.. Pedi proposta a Landlab a 04/06/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 11, "nome": "ocWG24_107 HABITAÇÃO LECEIA-Barcarena", "valor": 467162.18, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "ssk@teixeiraduarte.com. pedi cotação Landlab a 17/4/2024. jrebelo@ferreirabp.com e ricardino.gomes@tecnorem.pt | Falei com Ricardino em 16/02/26", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 12, "nome": "ocWG24_070 Edif. 2e3 Residências Universitárias da Universidade de Lisboa", "valor": 446943.48, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "fabio.brigas@constructorasanjose.com e claudiamagalhaes@tps.com.pt; Pedro Barbosa Rodrigues Pedro.Rodrigues@grupo-aca.com e emiliaalmeida@ferreirabp.com e jmr@teixeiraduarte.com | Ganhou Gabriel Couto", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 13, "nome": "ocWG24_123 Cidade do Futebol", "valor": 444462.44, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Sim", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Tem origem no ocWG23_190", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 14, "nome": "ocWG24_062 Parque Logistico do Montijo CBRE", "valor": 435108.3, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 15, "nome": "ocWG24_224  Lotes 13 e 14 da Fase-III do Belas Clube de Campo", "valor": 368890.74, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "antonio.leitao@engcon.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 16, "nome": "ocWG24_124 Hotel Quinta do Mar", "valor": 353854.51, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "manuel.pedrosa@constructorasanjose.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 17, "nome": "ocWG24_200 Condomínio da Praia das Maçãs, Sintra", "valor": 347237.42, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jc@detailsmind.com e antonio.goncalves@bwagroup.com.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 18, "nome": "ocWG24_061 PIA.02 São Francisco de Borja, Almada", "valor": 332291.87, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carlos.silva@tecnorem.pt e rsilva@grupodg.pt e claudia tps. Pedi Proposta Landlab a 29/02/2024. e sofia.martins@arliz.co | Falei com Ricardino em 16/02/26", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 19, "nome": "ocWG24_246 ARISH CAPITAL PARTNERS -SOSA - SOUTH OF SALDANHA", "valor": 316399.67, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "apg@teixeiraduarte.com e Sabina.Alves@baltorsteel.com. Pedi Proposta a Landlab a 27/9/24.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 20, "nome": "ocWG24_226 (revisão)ocWG23_035 Jardim EDIFICIO DOMUS_VI MERCÊS - SINTRA _PAISAGISMO", "valor": 305145.4, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Enviar revisão de 2024 a ricardo.goncalves@atlantinivel.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 21, "nome": "ocWG24_204 Moradia Embaixador Egipto", "valor": 284217.93, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carla.neto@tecniarte.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 22, "nome": "ocWG24_111 Operação PIA.12 Três Vales, Almada", "valor": 274219.5688, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "gil.santos@tecnorem.pt e nmano@ferreirabp.com. Pedi cotação Landlab a 16/04/2024 | Visitei a obra e enviamos proposta revista", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 23, "nome": "ocWG24_026 JARDINS DO ARQUIVO HISTÓRICO ULTRAMARINO", "valor": 241634.05, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jlavrador@cordivias.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 24, "nome": "ocWG24_064 Quinta da Boa Esperança, Almada", "valor": 232235.14, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carlos.silva@tecnorem.pt | Falei com Ricardino em 16/02/26", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 25, "nome": "ocWG24_068 EXECUÇÃO DE 4 MORADIAS NA RUA DOM AFONSO HENRIQUES 478, ESTORIL", "valor": 223298.22, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "fmc@mapengenharia.pt e antonio.leitao@engcon.pt e ruisilva@tps.com.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 26, "nome": "ocWG24_207 CASAS DA QUINTA", "valor": 222829.43, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carla.neto@tecniarte.pt e jmr@mapengenharia.pt e anabela.santos@planirest.pt; antonio.lagartixo@inspirecapital.pt. pedi proposta a Landlab a 11/09/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 27, "nome": "ocWG24_196 Hotel Rural-Ericeira", "valor": 216420.4, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "vasco.arez@vilaplano.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 28, "nome": "ocWG24_091 Casquilho Poente, PIA06Almada", "valor": 215740.03, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carlos.silva@tecnorem.pt e rsilva@grupodg.pt | Falei com Ricardino em 16/02/26", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 29, "nome": "ocWG24_071 StoneCapital - Redbridge School - Tapada da Ajuda", "valor": 207900.57, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "cristinamartins@visabeiraglobal.com. Pedi cotação Landlab a 13/3/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 30, "nome": "ocWG24_208 PaRK INTERNATIONAL SCHOOL", "valor": 203129.8, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "ppa@mapengenharia.pt e carlos.martins@planirest.pt e graca.correia@casais.pt e idiasmarques@tetris-db.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 31, "nome": "ocWG24_046 Vistabella - Oeiras", "valor": 202129.74, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "dario.quintal@alvesribeiro.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 32, "nome": "ocWG24_149 Bairro Alfazina", "valor": 191044.18, "mes": "", "requerente": "Tecnorem", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "nuno.vicente@tecnorem.pt (orçamento já dado em 2022). | Falei com Ricardino em 16/02/26 | SAMSIC", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 33, "nome": "ocWG24_214 Moradia R alcolena 27 Restelo", "valor": 185395.1, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "antonio.goncalves@bwagroup.com.pt e", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 34, "nome": "ocWG24_104 2 MORADIAS NA RUA DE INGLATERRA Nº333, ESTORIL", "valor": 178842.39, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "fmc@mapengenharia.pt e antonio.leitao@engcon.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 35, "nome": "ocWG24_191 HAB SAO MARÇAL 2 - CARNAXIDE", "valor": 172150.7, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jrebelo@ferreirabp.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 36, "nome": "ocWG24_221 Escola Secundária Professor José Augusto Lucas - Oeiras - Verdes", "valor": 168954.66, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "dferreira@graviner.pt (via BP). Pedi Landlab em 18/9/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 37, "nome": "ocWG24_126 Rua da Verónica-Lisboa", "valor": 166927.302, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "rafaelacerqueira@tps.com.pt | Ligar Nuno TPS", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 38, "nome": "ocWG24_238 EB2.3 Vialonga", "valor": 164157.78, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "ricardino.gomes@tecnorem.pt e cristinapereira@erf.com.pt | Falei com Ricardino em 16/02/26", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 39, "nome": "ocWG24_140 Lisboa_VT_VilaTijoloAmpl.Edificios", "valor": 164095.98, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "graca.correia@casais.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 40, "nome": "ocWG24_176  BLUEVILLAS_São Pedro Estroril", "valor": 162989.37, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "rui.marcal@asanto.pt. Pedi proposta Landlab a 28/06/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 41, "nome": "ocWG24_237 Marinha - Guincho-Lote 21", "valor": 160410.87, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "anne.zambon@verdeoeste.pt,", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 42, "nome": "ocWG24_177 Avenida da Argentina 186, em Cascais", "valor": 157824.15, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "andreramos@draftin.pt e nuno.carvalho@somafuture.com e anaalmeida@gabrielcouto.pt. Pedi orçamento a Landlab a 5/7/24.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 43, "nome": "ocWG24_256 Azenhas do Mar Jake Sutcliffe", "valor": 154136.59, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 44, "nome": "ocWG24_021 Qt. Grafanil - Lisboa", "valor": 151240.75, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "compras@pragosa.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 45, "nome": "ocWG24_067 Andre Novoa-Oeiras", "valor": 139612.66, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Visita ao local (Sónia+Bernardo), dia 7/3/2024. Pedido Landlab a 13/3/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 46, "nome": "ocWG24_180 Moradia Rua João das Regras 7 - Cascais", "valor": 135808.29, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "fabiano@belopaviana.pt. Pedi proposta a Landlab a 05/07/2024. Pedi esclarecimentos no dia 11/07/2024. Enviei também a luis.santos@x-log.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 47, "nome": "ocWG24_201 Rua da Índia 20, no Estoril", "valor": 134278.4, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "marilia.sepulveda@ergicon.com e andreramos@draftin.pt e jc@detailsmind.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 48, "nome": "ocWG24_144 HOTEL PALÁCIO DAS PEDROSAS", "valor": 132965.65, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "bruno.carregado@hci.pt e andre.hilario@somafuture.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 49, "nome": "ocWG24_217 ESCOLA SECUNDARIA FERNANDO LOPES GRAÇA - CASCAIS", "valor": 131867.73, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "dferreira@graviner.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 50, "nome": "ocWG24_035 Área de Lazer Lumiar", "valor": 125955.66, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "omep@omep.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 51, "nome": "ocWG24_139 NOVO EDIFÍCIO DE ARMAZENAGEM, COMÉRCIO E SERVIÇOS- MONTIJO", "valor": 119739.8, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "lucysantos@ferreirabp.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 52, "nome": "ocWG24_192 MALHA 9 - ALTA DE LISBOA", "valor": 118413.52, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "joao.branco@alvesribeiro.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 53, "nome": "ocWG24_145 Páteo da Cordoaria", "valor": 117790.25, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "beatriz.noronha@tecniarte.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 54, "nome": "ocWG24_022 EMP RAINHA D AMÉLIA - LISBOA", "valor": 112217.84, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "antonio.carvalho@baltor.pt | Passar lá; obra em curso", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 55, "nome": "ocWG24_185 Três Vales - Almada", "valor": 110189.65, "mes": "", "requerente": "Comparar com o 2026", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "dianapinheiro@tps.com.pt. Pedi cotação Landlab a 04/07/2024. | Priscila TPS", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 56, "nome": "ocWG24_170 Loteamento das Forças Armadas", "valor": 105986.52, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "catarinaferreira@tps.com.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 57, "nome": "ocWG24_213 Empreendimento da Irmã Joana- 30 fogos- Porto Salvo- Oeiras", "valor": 104824.46, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jcosta@grupodg.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 58, "nome": "ocWG24_141 DUUO - SS Pedido de cotação paisagismo", "valor": 101297.45, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "silvia.sa@alvesribeiro.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 59, "nome": "ocWG24_151 UNIDADE PRIVADA DE DIÁLISE DE CASCAIS", "valor": 96493.25, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "brunosantos@manuelmateusfrazao.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 60, "nome": "ocWG24_025 CUPAV_Amp. Req. Centro Univ. Pe Ant. Vieira", "valor": 95855.8, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carlos.santos@planirest.pt. Pedi preços, IETA, Globalpav, Icuros, SIT e Completegoroen", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 61, "nome": "ocWG24_015 Travessa de Terras de Sant´Ana", "valor": 93256.47, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "paula.portasio@tecniarte.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 62, "nome": "ocWG24_162 PARQUE DOS CISNES - LOTE 11 - MIRAFLORES", "valor": 93148.58, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jmr@mapengenharia.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 63, "nome": "ocWG24_023 EMEL - CONSTRUÇÃO DO PARQUE DE ESTACIONAMENTO NA AZINHAGA DAS CARMELITAS", "valor": 91034.84, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jlavrador@cordivias.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 64, "nome": "ocWG24_115 PARQUE VERDE PARA TODOS - MATARRAQUE", "valor": 84841.1, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jlavrador@cordivias.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 65, "nome": "ocWG24_206 Casa Saurimo", "valor": 80002.2, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "thiago.gomes@reformosa.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 66, "nome": "ocWG24_178  Jardim Verdizela-Seixal", "valor": 77680.34, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "amaliamiranda@locistudiola.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 67, "nome": "ocWG24_047 Calçada da Estrela 161-163", "valor": 77187.08, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "ruisilva@tps.com.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 68, "nome": "ocWG24_188 Moradia Birre (Guida Rato-Cascais)", "valor": 76922.58, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "guida.rato@perfectshape.pt. Pedi proposta a Landlab em 9/7/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 69, "nome": "ocWG24_202 Rua dos Depósitos de Água - Cobre - Cascais e Estoril -  Cascais", "valor": 74637.45, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "pedrobarbosa@horizonteamplo.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 70, "nome": "ocWG24_219 PACK 4 - Pavimentos e Arranjos Exteriores", "valor": 73466.35, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "anaalves@garcia.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 71, "nome": "ocWG24_117 BOSQUE DE CAPARIDE", "valor": 71270.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jlavrador@cordivias.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 72, "nome": "ocWG24_003 Moradia em Carnaxide", "valor": 70578.89, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "julianaaraujo@ncontract.pt e joana.saraiva@fcm.pt. Respostas por email em 28/03/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 73, "nome": "ocWG24_131 ESCOLA ARTISTICA ANTONIO ARROIO", "valor": 70435.94, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Sim", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "elianalopes@vlc-construcoes.com. Enviado revisão de Proposta em 21/11/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 74, "nome": "ocWG24_228 Moradia Quinta da Marinha-Rua do Atlântico Lote 45", "valor": 69372.18, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "maria.oliveira@fasquia.pt. pedi proposta landlab a 19/9/24.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 75, "nome": "ocWG24_167 ESCOLA BÁSICA DO INFANTADO", "valor": 64668.65, "mes": "", "requerente": "FCM", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "lucysantos@ferreirabp.com (peças desenhadas ver no link do email). e luis rodrigues (tecnorem) | Falei com Ricardino em 16/02/26", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 76, "nome": "ocWG24_203 Edif.TomásRibeiro", "valor": 64001.07, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "graca.correia@casais.pt e fmc@mapgroup.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 77, "nome": "ocWG24_154 Gustavo Guimarães Diaplant", "valor": 63651.21, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Verificar", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Via Bernardo", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 78, "nome": "ocWG24_040 Continente Bombarral", "valor": 62804.92, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "ana.valente@pericia.com.pt e amigodocampo.lda@gmail.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 79, "nome": "ocWG24_146  BAIRRO DA PORTELA DE AZÓIA - SANTA IRIA DE AZÓIA", "valor": 62458.61, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jlavrador@cordivias.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 80, "nome": "ocWG24_001 Moradia em Sintra - São Pedro de Penaferrim", "valor": 61730.55, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "luis.maciel@gandara.com.pt. Pedi cotação a Landlab a 10/01/2024. Pedido em 5/2/24, preços pavidren e medidas platibanda.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 81, "nome": "ocWG24_102 PIA 14 Rua das Quintas, Almada", "valor": 59329.59, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "rsilva@grupodg.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 82, "nome": "ocWG24_218 Rua São Ciro, 19", "valor": 59141.13, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "antonio.leitao@engcon.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 83, "nome": "ocWG24_220 Empreitada HVB_Rua Dom José Bragança_Lisboa", "valor": 59020.86, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "compras@pragosa.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 84, "nome": "ocWG24_262 - 5 moradias em Alcabideche", "valor": 56576.95, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "maraujo@comporto.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 85, "nome": "ocWG24_152 Edifício José Malhoa 12, em Lisboa", "valor": 56105.86, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "cristinamartins@visabeiraglobal.com e vfaleiro@tetris-db.com e pfalcato@vectormais e alexandra.rodrigues@openline.pt..comPedi proposta a Landlab a 22/05/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 86, "nome": "ocWG24_076 ERPI Parede", "valor": 55329.37, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "rafaelacerqueira@tps.com.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 87, "nome": "ocWG24_184 Estrada do Rodízio, Colares", "valor": 53741.9, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "joao.amaro@veyel.pt. Pedi esclarecimento sobre o sistema de rega em 8/7/24.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 88, "nome": "ocWG24_058 Centro Funerário de Sintra", "valor": 53620.79, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 89, "nome": "ocWG24_113 ESTRELA 46 - 3ª FASE - PAISAGISMO", "valor": 53283.62, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "ssk@teixeiraduarte.com e clima@sa-machado.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 90, "nome": "ocWG24_029 4 MORADIAS-Fontanelas", "valor": 52540.44, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "luispinheiro@eternalbonus.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 91, "nome": "ocWG24_130 Hotel Memmo Príncipe Real", "valor": 52066.96, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jorge.torrao@planirest.pt e antonio.leitao@engcon.pt e nelson.coelho@ruce.pt.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 92, "nome": "ocWG24_136 Moradia Kátia & Paulo, Oeiras", "valor": 51048.91, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "clima@sa-machado.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 93, "nome": "ocWG24_137 Habitação de São Marçal - 40 fogos, Carnaxide (NPH05)", "valor": 49773.69, "mes": "", "requerente": "Tecnorem", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "rafaelacerqueira@tps.com.pt e sandracruz@ferreirabp.come carlos.silva@tecnorem.pt | Falei com Ricardino em 16/02/26 | SAMSIC", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 94, "nome": "ocWG24_006 Moradia Unifamiliar Av. Brasil Nº8 Santo Amaro de Oeiras", "valor": 49286.84, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "sblopes@isptgroup.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 95, "nome": "ocWG24_197 Rua da Torre 1830", "valor": 48179.75, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 96, "nome": "ocWG24_168 PARQUES DESPORTIVOS - AMADORA - LOTE 1 e 2", "valor": 47090.95, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "filipa.omep@outlook.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 97, "nome": "ocWG24_173 Novotel Malhoa", "valor": 46909.75, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "ricardo.carvalho@openline.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 98, "nome": "ocWG24_013 ALDI - Venda Nova - Amadora", "valor": 46530.3, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "v.correia@plaintec.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 99, "nome": "ocWG24_028 COBERTURA AJARDINADA  - Saldanha Park Hotel", "valor": 45915.54, "mes": "", "requerente": "Pedro Fonte já não está na empresa", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "luana.soares@grupo-aca.com e pedro.rodrigues@grupo-aca.com e ruisilva@tps.com.pt e pedrofonte@omatapalo.com.pt.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 100, "nome": "ocWG24_018 CM SEIXAL – REQUALIFICAÇÃO DO ESPAÇO EXTERIOR DO BAIRRO MANUEL ANDRÉ", "valor": 45563.42, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jlavrador@cordivias.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 101, "nome": "ocWG24_193 Continente Malveira", "valor": 44693.43, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "solange.abreu@csretail.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 102, "nome": "ocWG24_210 Moradia Rua Joaquim António de Aguiar", "valor": 44007.56, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "ruisilva@tps.com.pt | Ligar Marina TPS final Março", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 103, "nome": "ocWG24_108 Vila Martel", "valor": 43711.74, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "fabiano@belopaviana.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 104, "nome": "ocWG24_007 CENTRO UNIVERSITÁRIO PADRE ANTÓNIO VIEIRA - CUPAV EM LISBOA", "valor": 41221.97, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "rafaelacerqueira@tps.com.pt e nelson.goncalves@somafuture.com e carlos planirest", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 105, "nome": "ocWG24_096 VILLA RAPOSA-Sesimbra", "valor": 40908.24, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jog@ecbuild.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 106, "nome": "ocWG24_038 CASA DE FRESCO-Sintra", "valor": 39988.61, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "katia.morgado.ap@gmail.com (não tendo FP Landlab comparei com outras propostas Landlab)", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 107, "nome": "ocWG24_019 Riverside Downtown Hotel - Lisboa", "valor": 39452.27, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "nmano@ferreirabp.com e maria.sepulveda@dstsgps.com e manuel.pedrosa@constructorasanjose.com. Pedi cotação Landlab em 15/01/2024, | Manuel pedrosa já não não está na San Jose | Carlos Oliveira 932 546886 | Pedro Matos (diretor de obra)  910800624  pedro.vieiramatos@cari.pt. eviar mail com apresentação", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 108, "nome": "ocWG24_077 Jardim na Biscaia", "valor": 39149.64, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Sim", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "info@claraguedes.com. Pedi cotação a Landlab a 15/3/2024", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 109, "nome": "ocWG24_209 Parcela B3 - Entrecampos - Lisboa", "valor": 38749.82, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "compras@pragosa.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 110, "nome": "ocWG24_223 EMPREITADA DE HABITAÇÃO COLETIVA NO LOTE G2, DO PAÇO DO LUMIAR, NO ÂMBITO DO PRR” -  - localizado no Paço do Lumiar, em Lisboa", "valor": 38734.45, "mes": "", "requerente": "Ferrreira estava em 1º", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "sandracruz@ferreirabp.com e carlos.silva@tecnorem.pt e anaalmeida@gabrielcouto.pt | Falei com Ricardino em 16/02/26", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 111, "nome": "ocWG24_050 Quinta do Facho-Monte de Caparica", "valor": 38405.77, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "claudiamagalhaes@tps.com.pt e nuno.carvalho@somafuture.com | Priscila TPS | enviar para priscillasoares@tps.com.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 112, "nome": "ocWG24_016 RUA DR. SOUSA MARTINS – VILA FRANCA DE XIRA", "valor": 38381.74, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jlavrador@cordivias.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 113, "nome": "ocWG24_276 (3 Moradias Areias)", "valor": 37121.55, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 114, "nome": "ocWG24_063 Moradia Leceia Lote 4 - Arranjos Exteriores", "valor": 36899.85, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "nuno.carvalho@somafuture.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 115, "nome": "ocWG24_143 Bairro Padre Cruz - Lisboa", "valor": 35547.6, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "beatrizcosta@tps.com.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 116, "nome": "ocWG24_002 Edifício na Rua de Vale Formoso, 31, Parcela A – Marvila, Lisboa", "valor": 35254.18, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "antonio.leitao@engcon.pt e ines.azevedo@engcon.pt. Pedido esclarecimento, de qual as espécies pretendidas em 19/9/23. e irina.ramos@constructorasanjose.com e joao.branco@alvesribeiro.pt e fmc@mapengenharia.pt.Pedi preços vasos em 5/2/24.Revisão enviado a 05/12/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 117, "nome": "ocWG24_132 ATLANTIC PHARMA", "valor": 35175.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "manuel.pedrosa@constructorasanjose.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 118, "nome": "ocWG24_101 LIDL Vila Franca de Xira", "valor": 35104.23, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "filipatriunfante@garcia.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 119, "nome": "ocWG24_052 Palácio Condes de Caria - Sete Rios", "valor": 34083.04, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "LX CAPITAL
+
+José Faria
+969 831 889", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 120, "nome": "ocWG24_037 Escola Secundária Fernando Lopes Graça - MUNICÍPIO DE CASCAIS", "valor": 33977.71, "mes": "", "requerente": "Tecnorem", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "nuno.mendes@tecnorem.pt e didia.rodrigues@wikibuild.pt | Falei com Ricardino Tecnorem em 16/02/26", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 121, "nome": "ocWG24_155 Funnywarrior_Constr.Edf. Estrada Caselas Belém_Restelo", "valor": 33917.16, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "marcia.carvalho@csconstrutora.com. Pedi Orçamento Landlab a 27/05/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 122, "nome": "ocWG24_110 Cobertura ajardinada - E.17.24 Brogueira", "valor": 33512.74, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "orcamentos@saldanhaalves.com. Pedi cotação Landlab 12/4/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 123, "nome": "ocWG24_243 HOSPITAL CUF ALMADA", "valor": 33394.57, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "manuel.pedrosa@constructorasanjose.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 124, "nome": "ocWG24_073 Moradia Alpolentim", "valor": 33315.05, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "pedro.borges@vogue-homes.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 125, "nome": "ocWG24_045 Escola Secundária de São João do Estoril", "valor": 33116.88, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "claudiamagalhaes@tps.com.pt e dferreira@graviner.pt e luispinheiro@nve.pt e romao.ferreira@rvpconstrucao.pt e ricardino.gomes@tecnorem.pt. Falta Orçamento cobertura verde. Pedi Landlab 22/2/24. e rui.carvalho@grupoccr.pt | Falei com Ricardino em 16/02/26", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 126, "nome": "ocWG24_240 Pedro Boal-Alqueidão da Serra", "valor": 32957.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "pedro_boal@hotmail.com. Pedi Proposta a Landlab a 19/09/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 127, "nome": "ocWG24_211 Sede do Partido Social Democrata", "valor": 32659.31, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "orcamentacao@grupofas.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 128, "nome": "ocWG24_098  Barreiras Acusticas - Restelo - Gavinho", "valor": 32132.39, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "leonor.traguil@by-gavinho.com (Sónia visitou em 4/4/2024). Subempreiteiro = Fusotempo. (enviado para os 2 emalis).", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 129, "nome": "ocWG24_100 Várzea de Sintra", "valor": 31468.13, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Liliana Ferreira <lilianaferreira@visabeiraglobal.com>;", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 130, "nome": "ocWG24_084 Moradia Carlos Maleiro", "valor": 31348.23, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "antonio.goncalves@bwagroup.com.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 131, "nome": "ocWG24_165 Kate Dixon - Barreiras (Malveira da Serra)", "valor": 31276.4, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jlavrador@cordivias.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 132, "nome": "ocWG24_057 IPSS Loures-Saltarico", "valor": 29739.5, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "teresaribeiro23@gmail.com. Pedi proposta Landlab a 27/2/24.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 133, "nome": "ocWG24_119 Native TownHouses - Belas C.C", "valor": 29223.6, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "sofia.martins@arliz.co", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 134, "nome": "ocWG24_134 Creche Modular no Bairro da Boavista - SRU - Lisboa", "valor": 29184.18, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "daniela.pinto@outputengenharia.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 135, "nome": "ocWG24_024 Centro Cultural de Barcarena", "valor": 28557.3, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "bruno.carvalho@ruce.pt. Em 13/05/2024, contato de eng. Antonio.leite, para baixar o valor da proposta.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 136, "nome": "ocWG24_074 Moradia em Areias - Cascais", "valor": 28078.79, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "elianalopes@vlc-construcoes.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 137, "nome": "ocWG24_112 ESTRADA DE BENFICA, N.º 410 a 416", "valor": 27856.44, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "rafaelacerqueira@tps.com.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 138, "nome": "ocWG24_171 Vias Envolventes EB Silveira - Torres Vedras", "valor": 27534.15, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "compras@pragosa.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 139, "nome": "ocWG24_247 Parque Adão Barata", "valor": 27179.2, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "cristinapereira@erf.com.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 140, "nome": "ocWG24_055 Rua Junqueira 317", "valor": 26801.27, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carlos.martins@planirest.pt. Pedi cotação a Landlab a 23/2/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 141, "nome": "ocWG24_248 Praceta do Soldado-Ribamar (Mafra)", "valor": 26536.06, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "VNZ", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 142, "nome": "ocWG24_039 Edifícios Para a Futura Universidade na Falagueira, Amadora", "valor": 25954.5, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "claudiamagalhaes@tps.com.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 143, "nome": "ocWG24_017 SECRET GARDEN VILLAS (2ª Fase) em Campo de Ourique", "valor": 25681.86, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carlos.martins@planirest.pt | Tiago almeida 932567132", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 144, "nome": "ocWG24_150 Quinta da Bassaqueira; Azeitão_Setúbal", "valor": 25650.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carlos.santos@planirest.pt (pedi cotação a landlab a 20/05/2024) e clima@sa-machado.com. Enviado revisão em 05/12/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 145, "nome": "ocWG24_094 Calçada do Tarujo", "valor": 24825.77, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "nuno.carvalho@somafuture.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 146, "nome": "ocWG24_031 Rua Saraiva de Carvalho 177 - Lisboa", "valor": 24360.4, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "nelson.goncalves@fck.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 147, "nome": "ocWG24_259 Cobertura-Quinta do Perú", "valor": 24356.24, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "guida.rato@perfectshape.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 148, "nome": "ocWG24_090 MORADIA EM ALCABIDECHE", "valor": 23211.23, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carlos.ferreira@complai.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 149, "nome": "ocWG24_231 Pego Longo - Rua das Flores - Sintra", "valor": 22631.46, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carlos.silva@tecnorem.pt e emiliaalmeida@ferreirabp.com e joao@vnz.pt e luana.soares@grupo-aca.com | Falei com Ricardino em 16/02/26", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 150, "nome": "ocWG24_054 Quinta da Glória-Palmela", "valor": 22504.49, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "pedrogmatos@yahoo.com.
+Visita a 28/02/2024-12H00.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 151, "nome": "ocWG24_166 PARQUE INFANTIL DE ALPRIATE - VIALONGA", "valor": 22042.5, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jlavrador@cordivias.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 152, "nome": "ocWG24_014 Moradia S. João Tojal", "valor": 21444.99, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "nuno.carvalho@somafuture.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 153, "nome": "ocWG24_085 Sobralinho-Vialonga", "valor": 20358.55, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jlavrador@cordivias.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 154, "nome": "ocWG24_239 PALMELA SUMMER, S.A", "valor": 20094.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "joao.amaral@wikibuild.pt e carla.lima@baltor.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 155, "nome": "ocWG24_072 Cobertura Malveira da Serra", "valor": 19675.29, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "bruno.pereira@interiorunico.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 156, "nome": "ocWG24_053 Cobertura Verde-Lavre", "valor": 19667.5, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "alexandraimar@gmail.com. Pedi Proposta Landlab em 22/2/2024", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 157, "nome": "ocWG24_036 Cobertura Verde-Caldas da Rainha", "valor": 19434.55, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "tiago.tgmconst@gmail.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 158, "nome": "ocWG24_222 Moradia Birre Cascais", "valor": 19105.99, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jbalmeida@workingarden.pt. Pedi proposta Landlab a 5/9/24.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 159, "nome": "ocWG24_169 PRAÇA AFONSO DO PAÇO", "valor": 18229.44, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jlavrador@cordivias.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 160, "nome": "ocWG24_181 Adelino Amaro da Costa 121 - Green Screen Vegetação", "valor": 16136.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Vi BP. vitorserro@rbdl.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 161, "nome": "ocWG24_172 Inspire Capital Barreira Campo de Ourique", "valor": 15995.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 162, "nome": "ocWG24_133 Paulo Viana - Barreiras Acústicas, Estoril", "valor": 15010.99, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Helena Nobre -  geral@cardial.pt;
+Paulo Viana - pparenteviana@gmail.com;
+Visitado por Sónia a 06/05/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 163, "nome": "ocWG24_216 Kerakoll, expo lisboa - Transfor", "valor": 14974.29, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "cesar.lopes@transforgroup.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 164, "nome": "ocWG24_274 Marechal Carmona 574", "valor": 14817.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 165, "nome": "ocWG24_083 Portela de Azóia - Santa Iria Azoia - Loures", "valor": 14405.42, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "\", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 166, "nome": "ocWG24_271 Dr. Jorge Coutinho Remodelação", "valor": 14357.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 167, "nome": "ocWG24_128 Quinta do Perú 306,  Sesimbra", "valor": 13348.23, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "nuno.carvalho@somafuture.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 168, "nome": "ocWG24_099 Barreiras - Alta de Lisboa", "valor": 13110.24, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "khd@onelatitude.com. Visitado por Sónia a 28/03/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 169, "nome": "ocWG24_227 Terraço Moscavide Sra. Carla Branco", "valor": 12814.5, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 170, "nome": "ocWG24_093 Sist. Captação àgua-Saltarico", "valor": 12338.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 171, "nome": "ocWG24_187 Barreiras Nuno Eugénio - Moradia Birre", "valor": 12335.02, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "guilherme@livewood.pt. Visitado a 5/7/2024,", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 172, "nome": "ocWG24_183 R Entrecampos 43_Fase2", "valor": 12101.68, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "antonio.goncalves@bwagroup.com.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 173, "nome": "ocWG24_075 Centro de Artes Portela - Leiria", "valor": 12052.38, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jorge.martins@hortirelva.pt (via margarida)", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 174, "nome": "ocWG24_043 Socicorreia - Varino 06, Lisboa", "valor": 11969.2, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Rui Lopes, Eng.º 964 267 309
+ruilopes@socicorreia.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 175, "nome": "ocWG24_277 Barreiras Quinta do Prior", "valor": 11911.5, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 176, "nome": "ocWG24_059 Carlos Esteves - Amora", "valor": 11725.62, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Carlos Esteves
+912591918
+cesteves99@googlemail.com.
+Visita a 28/02/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 177, "nome": "ocWG24_121 Palácio do Machadinho", "valor": 11456.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "pedro.monteiro@transforgroup.com e vasco.duarte@transforgroup.com.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 178, "nome": "ocWG24_270 Dr. Gonçalo Real Remodelação", "valor": 10952.6, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 179, "nome": "ocWG24_081 Rodrigo Fragoso Fernandes - Estoril", "valor": 10532.5, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Visita a 19/03/2024.
+Contacto: 912228979
+Email: rfragosofernandes@dreamdealer.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 180, "nome": "ocWG24_179 Adega Mãe", "valor": 10103.89, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "mloureiro@adegamae.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 181, "nome": "ocWG24_056 Jardim Vertical - Rua Rodrigues Sampaio, 12-16 (2024)", "valor": 9686.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carlos.santos@planirest.pt. Pedi cotação a Landlab a 26/2/2024. Pedi medidas da parede.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 182, "nome": "ocWG24_194 Edifícios de Habitação Municipal do Bairro Marechal Carmona (Edifício J3)", "valor": 9168.12, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Ruce - 937730622", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 183, "nome": "ocWG24_182 Moradia Pera - Trafaria", "valor": 8981.1, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "joaocarmosilva@viplace.pt (pedi proposta Landlab a 03/07/2024)", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 184, "nome": "ocWG24_175 Jardim Vertical São Marçal", "valor": 8766.9, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "ricardino.gomes@tecnorem.pt. Pedi proposta Landlab a 28/06/2024. | Falei com Ricardino em 16/02/26", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 185, "nome": "ocWG24_042 Victor Reis - Monte Estoril", "valor": 8515.32, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Victor Reis 910638719
+victor@blurenova.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 186, "nome": "ocWG24_142 Rua do Salitre, Lisboa", "valor": 8508.23, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "nuno.carvalho@somafuture.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 187, "nome": "ocWG24_105 Horto Campo Grande", "valor": 8443.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "fca@hortodocampogrande.com (via margarida )", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 188, "nome": "ocWG24_147 Arruda dos vinhos-Jardim Vertical", "valor": 8308.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "rserra@metrical.pt (sónia visitou em 21/05/2024)", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 189, "nome": "ocWG24_272 Dra Maria José Barros Remodelação", "valor": 8275.2, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 190, "nome": "ocWG24_122 Cond São Sebastião Frente Piscina", "valor": 7969.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 191, "nome": "ocWG24_161 Habitação Municipal do Bairro Marechal Carmona", "valor": 7936.62, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carlos.silva@tecnorem.pt | Falei com Ricardino em 16/02/26", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 192, "nome": "ocWG24_087 Escola Palmela", "valor": 7909.5, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "MARGARIDA= CSSILVA@CM-PALMELA.PT", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 193, "nome": "ocWG24_103 MATRIZAUTO MONTIJO", "valor": 7801.16, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "diana.fernandes@baltor.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 194, "nome": "ocWG24_255 Priscila e Pedro Almeida Moradia Mafra", "valor": 7751.45, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "pedronmcalmeida@gmail.com;
+prishmsilva@gmail.com
+Reunião a 24/09/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 195, "nome": "ocWG24_089 Bairro da Encarnação em Lisboa, Rua 20, Nº21", "valor": 7595.28, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Sim", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "rjpsantos@gmail.com
+
+1ª Orçamento enviado a 25/03/2024
+
+Revisão do Orçamento Reenviada a 24/04/2024", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 196, "nome": "ocWG24_198 Parede Verde+Cobertura (Quinta da Marinha-Inplanta)", "valor": 7220.87, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "inplanta@gmail.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 197, "nome": "ocWG24_215 Cobertura Verdizela", "valor": 6611.4, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "orcamentos@definicaosolida.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 198, "nome": "ocWG24_190 Moradia Bernardo Jesus - Bairro da Encarnação", "valor": 6175.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Bernardo Jesus - 965 008 075", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 199, "nome": "ocWG24_127 Xana Gavancha", "valor": 6000.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 200, "nome": "ocWG24_129 Elisabete Santos-Marinha Grande", "valor": 5387.6, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "elisabetesantos00@gmail.com. Pedi orçamento Landlab a 06/05/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 201, "nome": "ocWG24_082 Frederico Fragoso Fernandes - Estoril", "valor": 5386.02, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Visita a 19/03(2024.
+Contacto: 
+
+Email: fredericoff@gmail.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 202, "nome": "ocWG24_020 Escola Secundária de Porto de Mós", "valor": 5369.81, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "ricardopiairo@gabrielcouto.pt. Pedi cotação Landlab a 15/01/2024", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 203, "nome": "ocWG24_258 António Marreiros R. Ivens 6, Lisboa", "valor": 5294.04, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Reunião a 01/10/2014.
+a.marreiros@sapo.pt
+Envio de Revisão a  07/01/2024", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 204, "nome": "ocWG24_229 Foz do Sisandro", "valor": 5142.6, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 205, "nome": "ocWG24_118 RUA COMBATENTES DO ULTRAMAR-Odivelas", "valor": 5054.4, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jlavrador@cordivias.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 206, "nome": "ocWG24_138 Aprendizes (Cobertura Verde)", "valor": 4773.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "lmarcon.arq@gmail.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 207, "nome": "ocWG24_109 Catarina Braziel-Moradia Oeiras", "valor": 4603.3, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Sim", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "catarinabraziel@gmail.com>", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 208, "nome": "ocWG24_080 Marta Araújo - Parede", "valor": 3767.2, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Visita a 08/03/2024. Contacto: 918771968
+email: marta.ketuta@gmail.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 209, "nome": "ocWG24_051 Bancos e papeleiras Templo", "valor": 3690.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Sim", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 210, "nome": "ocWG24_097 Elena Tejada-Carcavelos", "valor": 3644.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "<a href=\"mailto:elena.tejada@sapo.pt\">elena.tejada@sapo.pt</a>Sónia Visitou em 4/4/2024", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 211, "nome": "ocWG24_069 MORADIA NO MURTAL", "valor": 3600.13, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "r4.remodelacoes@gmail.com. Pedi cotação Landlab a 12/03/2024. Pedido desenhos em DWG", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 212, "nome": "ocWG24_032 JF AJUDA - EXECUÇÃO DE DOIS PROJECTOS", "valor": 3415.52, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jlavrador@cordivias.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 213, "nome": "ocWG24_049 Portão Aprendizes", "valor": 3250.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Ludmila Macron", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 214, "nome": "ocWG24_048 Ana Bela Rogado - Charneca da Caparica", "valor": 3179.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Ana Bela Rogado
+966740117
+
+rogadoanabela@gmail.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 215, "nome": "ocWG24_120 Hélio Ribeiro (Foz do Arelho)", "valor": 3020.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "jardins.obidos@gmail.com. Visitado a 19/04/2024", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 216, "nome": "ocWG24_114 Amoreiras Floreira", "valor": 2947.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Sim", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "rj@lajecapital.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 217, "nome": "ocWG24_106 Remod_Edifício_Santogal_Abrunheira", "valor": 2328.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carlos.santos@planirest.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 218, "nome": "ocWG24_044 Duarte Veiga da Cunha - Estoril", "valor": 2207.8, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Sim", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Duarte Veiga da Cunha
+912 789 139
+d.cunha@adp.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 219, "nome": "ocWG24_195 Daniel Viana (Painel Extra)", "valor": 2096.43, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Sim", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Daniel Viana (via BP)", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 220, "nome": "ocWG24_060 Carlos Silva - Livramento", "valor": 1842.84, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Carlos Silva
+915696556
+carlosmndsilva@gmail.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 221, "nome": "ocWG24_027 Socicorreia SECXXI 16", "valor": 1582.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Sim", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "ruilopes@socicorreia.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 222, "nome": "ocWG24_233 Rega Teatro Variedades", "valor": 1460.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Sim", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 223, "nome": "ocWG24_158 MUO - Cotação Acessos Rodoviários", "valor": 880.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Parcialmente", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "via jp@wegarden.pt (jose.lopo.carvalho@mota-engil.pt)", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 224, "nome": "ocWG24_009 Rodrigo Vilhena", "valor": 790.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Enviado a 11/01/2024", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 225, "nome": "ocWG24_079 Alexandre Sloop", "valor": 780.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "portsloop@yahoo.com", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 226, "nome": "ocWG24_189 Hotel na Rua Rosa Araújo 37-39 em Lisboa", "valor": 710.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Verificar", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "carlos.martins@planirest.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 227, "nome": "ocWG24_030 Infinity ME Plantas", "valor": 568.88, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 228, "nome": "ocWG24_010 Hipoteses-Hotel Czar", "valor": 26.4, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Enviado a 11/01/2024", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 229, "nome": "ocWG24_135 REQUALIFICAÇÃO DA PRAÇA DA REPUBLICA EM SACAVÉM", "valor": 0.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "compras@pragosa.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 230, "nome": "ocWG24_174 Nidia Saba - Quinta Patino", "valor": 0.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Visitado a 21/06/2024", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 231, "nome": "ocWG24_186 Escola Básica do Bairro Novo - CMSeixal", "valor": 0.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Enviado", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "daniela.pinto@outputengenharia.pt", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 232, "nome": "ocWG24_205 Parque das Nações Lote 1.11 – Lisboa", "valor": 0.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "pedro.caneco@hci.pt. Pedi proposta a Landlab a 5/9/24.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 233, "nome": "ocWG24_212 Av. Duque D'Ávila - Pedido de cotação para solução acústica", "valor": 0.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "stefano.silva@ktl.pt. Pedi proposta Landlab a 13/09/2024", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 234, "nome": "ocWG24_225 Programadores LX Living", "valor": 0.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 235, "nome": "ocWG24_261 IGREJA BEATO - Vedação Acústica", "valor": 0.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "nuno.farinha@constructorasanjose.com | Nuno Farinha 914381992", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 236, "nome": "ocWG24_266 ALDEIA DA ROCA", "valor": 0.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Passou para 2024", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "Eliana Lopes <elianalopes@vlc-construcoes.com> E andre.monteiro@fcm.pt. Foi pedido cotação Landlab a 7/9/23. Pedido inf. sobre tamanho de vasos em 13/9/23. Pediram revisão em 14/10/2024.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 237, "nome": "ocWG24_268 Parque dos Cisnes Lotes 4, 5, 6, 7 e 23", "valor": 0.0, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 238, "nome": "ocWG24_008 Creche do Centro D. Bosco", "valor": null, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "claudiamagalhaes@tps.com.pt e vitor.afonso@nowxxi.pt. Pedi esclarecimento em 16/01/2024, sist. rega.", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 239, "nome": "ocWG24_066 Hotel Biarritz em Cascais", "valor": null, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [{"texto": "vital.l.rodrigues@unni.pt. Pedi cotação a Landlab a 7/3/2024", "at": "2024-01-01T00:00:00Z"}], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 240, "nome": "ocWG24_078 Nuno Vaz Areias do Seixo", "valor": null, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}, {"id": 241, "nome": "ocWG24_088 Daniel Viana-Contenção de Terras", "valor": null, "mes": "", "requerente": "", "responsavel": "", "concurso": "", "visita": "", "adjudicado": "Não", "dataArranque": "", "emailEnvio": "", "dataEnvio": "", "grauOverride": "", "notas": "", "notasHist": [], "lembretes": [], "addedAt": "2024-01-01T00:00:00Z"}];
+
+/* ══════════════════════════════════════════
+   LEMBRETES
+   ══════════════════════════════════════════ */
+function todayStr(){ return new Date().toISOString().slice(0,10); }
+function fmtLembreteDate(d){
+  if(!d) return '';
+  const [y,m,day] = d.split('-');
+  return `${day}/${m}/${y}`;
+}
+function lembreteStatus(d){
+  const t = todayStr();
+  if(d < t) return 'overdue';
+  if(d === t) return 'today';
+  return 'future';
+}
+
+function renderLembretes(r){
+  const list = document.getElementById('lembrete-list');
+  const lembretes = r.lembretes || [];
+  if(!lembretes.length){ list.innerHTML='<div style="font-size:12px;color:var(--text3);padding:2px 0 6px">Sem lembretes.</div>'; return; }
+  list.innerHTML = lembretes.map((l,i) => {
+    const st = l.done ? 'done' : lembreteStatus(l.data);
+    const dateLabel = st==='overdue' ? '⚠ '+fmtLembreteDate(l.data)+' — em atraso'
+                    : st==='today'   ? '📅 Hoje — '+fmtLembreteDate(l.data)
+                    : fmtLembreteDate(l.data);
+    return `<div class="lembrete-item ${l.done?'done':st}">
+      <div class="lembrete-content">
+        <div class="lembrete-date">${dateLabel}</div>
+        <div class="lembrete-text">${l.texto}</div>
+      </div>
+      <div class="lembrete-btns">
+        <button class="lb-btn" onclick="toggleLembrete(${i})" title="${l.done?'Reabrir':'Marcar como feito'}">${l.done?'↩':'✓'}</button>
+        <button class="lb-btn" onclick="deleteLembrete(${i})" title="Eliminar">✕</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function addLembrete(){
+  if(activeId===null) return;
+  const data  = document.getElementById('lembrete-data').value;
+  const texto = document.getElementById('lembrete-texto').value.trim();
+  if(!data || !texto) return;
+  const r = DATA.find(d=>d.id===activeId); if(!r) return;
+  if(!r.lembretes) r.lembretes=[];
+  r.lembretes.push({data, texto, done:false});
+  r.lembretes.sort((a,b)=>a.data.localeCompare(b.data));
+  persist(); renderLembretes(r); renderReminderBanner();
+  document.getElementById('lembrete-data').value='';
+  document.getElementById('lembrete-texto').value='';
+}
+
+function toggleLembrete(idx){
+  const r = DATA.find(d=>d.id===activeId); if(!r||!r.lembretes) return;
+  r.lembretes[idx].done = !r.lembretes[idx].done;
+  persist(); renderLembretes(r); renderReminderBanner();
+}
+
+function deleteLembrete(idx){
+  const r = DATA.find(d=>d.id===activeId); if(!r||!r.lembretes) return;
+  if(!confirm('Eliminar este lembrete?')) return;
+  r.lembretes.splice(idx,1);
+  persist(); renderLembretes(r); renderReminderBanner();
+}
+
+let bannerDismissed = false;
+function dismissBanner(){
+  bannerDismissed = true;
+  document.getElementById('reminder-banner').classList.remove('has-items');
+}
+
+function renderReminderBanner(){
+  if(bannerDismissed) return;
+  const today = todayStr();
+  const due = [];
+  DATA.forEach(r => {
+    (r.lembretes||[]).filter(l=>!l.done && l.data<=today).forEach(l=>{
+      due.push({r, l});
+    });
+  });
+  const banner = document.getElementById('reminder-banner');
+  const list   = document.getElementById('reminder-list');
+  if(!due.length){ banner.classList.remove('has-items'); return; }
+  banner.classList.add('has-items');
+  list.innerHTML = due.map(({r,l}) => {
+    const st = lembreteStatus(l.data);
+    const label = st==='overdue' ? `⚠ ${fmtLembreteDate(l.data)} (em atraso)` : 'Hoje';
+    const nome = r.nome.replace(/^ocWG\S+\s*/,'').slice(0,40);
+    return `<div class="reminder-entry ${st==='overdue'?'overdue':''}">
+      <span>${label} —</span>
+      <b onclick="openDetail(${r.id})">${nome}</b>
+      <span style="color:var(--text3)">·</span>
+      <span>${l.texto}</span>
+    </div>`;
+  }).join('');
+}
+
+load(); // async — renders inside
+
+/* ── Sticky table height ── */
+function sizeTable(){
+  const header    = document.querySelector('.header');
+  const filters   = document.querySelector('.filters');
+  const dashBar   = document.getElementById('dash-bar');
+  const remBanner = document.getElementById('reminder-banner');
+  const tblWrap   = document.querySelector('.tbl-wrap');
+  if(!tblWrap) return;
+  const used = header.offsetHeight + filters.offsetHeight
+    + (dashBar.classList.contains('open') ? dashBar.offsetHeight : 0)
+    + (remBanner.classList.contains('has-items') ? remBanner.offsetHeight : 0);
+  const padding = 20 + 36 + 2;
+  tblWrap.style.maxHeight = (window.innerHeight - used - padding) + 'px';
+}
+window.addEventListener('resize', sizeTable);
+// Re-run after dash animation
+const origToggle = toggleDash;
+toggleDash = function(){ origToggle(); setTimeout(sizeTable, 380); };
+sizeTable();
+
+/* ══════════════════════════════════════════
+   DASHBOARD
+   ══════════════════════════════════════════ */
+let dashOpen = false;
+
+function toggleDash(){
+  dashOpen = !dashOpen;
+  const bar = document.getElementById('dash-bar');
+  const btn = document.getElementById('dash-toggle-btn');
+  bar.classList.toggle('open', dashOpen);
+  btn.classList.toggle('open', dashOpen);
+  if(dashOpen) renderDash();
+}
+
+const fmtK = v => {
+  if(v >= 1000000) return (v/1000000).toFixed(1).replace('.',',') + 'M€';
+  if(v >= 1000) return Math.round(v/1000) + 'k€';
+  return Math.round(v) + '€';
+};
+const pct = (a,b) => b ? Math.round(a/b*100) : 0;
+
+function makeBarChart(el, rows, color){
+  // rows: [{label, val, valFmt}]
+  const max = Math.max(...rows.map(r=>r.val), 1);
+  el.innerHTML = rows.map(r => `
+    <div class="bar-row">
+      <div class="bar-label" title="${r.label}">${r.label}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${pct(r.val,max)}%;background:${color}"></div></div>
+      <div class="bar-val">${r.valFmt||fmtK(r.val)}</div>
+    </div>`).join('');
+}
+
+function renderDash(){
+  const d = DATA;
+  const fmtEur = v => new Intl.NumberFormat('pt-PT',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(v);
+
+  /* 1 — Valor por mês */
+  const mesTotals = {};
+  MESES.forEach(m => mesTotals[m] = 0);
+  d.forEach(r => { if(r.mes && mesTotals[r.mes]!==undefined) mesTotals[r.mes] += r.valor||0; });
+  const mesRows = MESES.filter(m=>mesTotals[m]>0).map(m=>({label:m.slice(0,3), val:mesTotals[m]}));
+  makeBarChart(document.getElementById('d-meses'), mesRows, 'var(--accent)');
+
+  /* 2 — Por responsável */
+  const respMap = {};
+  d.forEach(r => {
+    const k = r.responsavel||'(sem resp.)';
+    respMap[k] = (respMap[k]||0) + (r.valor||0);
+  });
+  const respRows = Object.entries(respMap).sort((a,b)=>b[1]-a[1]).map(([k,v])=>({label:k, val:v}));
+  makeBarChart(document.getElementById('d-resps'), respRows, 'var(--info-text)');
+
+  /* 3 — Donut grau de interesse */
+  const grauColors = {Baixo:'#b91c1c', Médio:'#d4920a', Alto:'#1a4a8a', 'Muito Alto':'#2d6a4f'};
+  const grauCount = {Baixo:0, Médio:0, Alto:0, 'Muito Alto':0};
+  d.forEach(r => {
+    const {score,override} = calcGrauScore(r);
+    const lbl = override ? r.grauOverride : grauLabel(score);
+    if(grauCount[lbl]!==undefined) grauCount[lbl]++;
+  });
+  const total = d.length;
+  const grauEntries = Object.entries(grauCount).filter(([,v])=>v>0);
+  // Draw SVG donut
+  const cx=40,cy=40,r=28,stroke=12;
+  const circumference = 2*Math.PI*r;
+  let offset=0;
+  const svgEl = document.getElementById('d-donut');
+  svgEl.innerHTML = `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="var(--bg3)" stroke-width="${stroke}"/>` +
+    grauEntries.map(([lbl,cnt])=>{
+      const dashLen = circumference * cnt/total;
+      const seg = `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${grauColors[lbl]}" stroke-width="${stroke}" stroke-dasharray="${dashLen} ${circumference-dashLen}" stroke-dashoffset="${-offset}" transform="rotate(-90 ${cx} ${cy})" stroke-linecap="butt"/>`;
+      offset += dashLen;
+      return seg;
+    }).join('') +
+    `<text x="${cx}" y="${cy+1}" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="600" fill="var(--text)">${total}</text>
+     <text x="${cx}" y="${cy+13}" text-anchor="middle" font-size="8" fill="var(--text3)">total</text>`;
+  document.getElementById('d-donut-legend').innerHTML = grauEntries.map(([lbl,cnt])=>
+    `<div class="legend-row"><span class="legend-dot" style="background:${grauColors[lbl]}"></span><span>${lbl}</span><span style="margin-left:auto;font-weight:600;color:var(--text)">${cnt}</span></div>`
+  ).join('');
+
+  /* 4 — Taxa de adjudicação */
+  const adjSim   = d.filter(r=>(r.adjudicado||'').toLowerCase()==='sim').length;
+  const adjNao   = d.filter(r=>(r.adjudicado||'').toLowerCase()==='não').length;
+  const adjParc  = d.filter(r=>(r.adjudicado||'').toLowerCase()==='parcialmente').length;
+  const adjAberto= d.length - adjSim - adjNao - adjParc;
+  const valAdj   = d.filter(r=>(r.adjudicado||'').toLowerCase()==='sim').reduce((s,r)=>s+(r.valor||0),0);
+  document.getElementById('d-adj').innerHTML = [
+    ['Adjudicados', `${adjSim} (${pct(adjSim,total)}%)`],
+    ['Não adjudicados', `${adjNao} (${pct(adjNao,total)}%)`],
+    ['Parcialmente', `${adjParc}`],
+    ['Em aberto', `${adjAberto} (${pct(adjAberto,total)}%)`],
+    ['Valor adjudicado', fmtEur(valAdj)],
+  ].map(([n,v])=>`<div class="kpi-item"><span class="kpi-name">${n}</span><span class="kpi-val">${v}</span></div>`).join('');
+
+  /* 5 — Top 5 por valor */
+  const top5 = [...d].sort((a,b)=>(b.valor||0)-(a.valor||0)).slice(0,5);
+  makeBarChart(document.getElementById('d-top5'), top5.map(r=>({
+    label: r.nome.replace(/^ocWG\S+\s*/,'').slice(0,30),
+    val: r.valor||0,
+    valFmt: fmtEur(r.valor||0)
+  })), 'var(--amber-text)');
+}
+</script>
+</body>
+</html>

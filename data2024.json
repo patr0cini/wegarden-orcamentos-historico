@@ -1,1 +1,5673 @@
-[]
+{
+  "data": [
+    {
+      "id": 1,
+      "nome": "ocWG24_065 Parque Urbano Corroios - Seixal",
+      "valor": 1343206.2,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "compras@pragosa.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "nome": "ocWG24_011 HILTON CASCAIS HOTEL & RESIDANCE",
+      "valor": 778420.57,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jmr@teixeiraduarte.com, duarte.nunes@mota-engil.pt, manuel.pedrosa@constructorasanjose.com. Pedi Proposta Landlab a 11/01/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 3,
+      "nome": "ocWG24_095 Sobreiras Altas,Grândola",
+      "valor": 728112.1,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "vitor.mendes@fccco.com. Pedi cotação Landlab a 03/04/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 4,
+      "nome": "ocWG24_033 THE PARK RESIDENCES CASCAIS",
+      "valor": 671520,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Iniciado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "manuel.pedrosa@constructorasanjose.com. Pedi cotação Planta Livre (8/2/24)",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 5,
+      "nome": "ocWG24_034 ALMA GARDENS - Lotes 5, 6, 7 e 8 - Oeiras",
+      "valor": 642144.19,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "joana.goncalves@construtoraudra.pt e rmendes@perene.pt. Pedi cotação Landlab a 31/01/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 6,
+      "nome": "ocWG24_004 Great Flags - ERPI Cascais",
+      "valor": 504515.61,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "luana.soares@grupo-aca.com | Diretor de obra António Madeira 961112563 | Liguei em 2 de Março, Liguei a 29 de Abril, Ligar  em final  de Maio, projeto em revisão",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 7,
+      "nome": "ocWG24_041 Escola Básica e Secundária IBN Mucana",
+      "valor": 491559.25,
+      "mes": "",
+      "requerente": "Tecnorem",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carlos.silva@tecnorem.pt e claudiamagalhaes@tps.com.pt e goncalo.pinto@atlantinivel.pt e dferreira@graviner.pt | Falei com Ricardino em 16/02/26 | SAMIC",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 8,
+      "nome": "ocWG24_012 Av. da República 5-7 Pacote 4.2 e 6",
+      "valor": 490065.01,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "José Peixoto-KTL e cesar.lopes@transforgroup.com.Pedi proposta Landlab 30/6/23). Falta cotação VVLourenço. Enviado por Bernardo em 6/7/23.Passou de 2024-Jorge Baltazar KTL. | Ganhou Jardins do Paço",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 9,
+      "nome": "ocWG24_244 Marinha Living-Rua Eucaliptais",
+      "valor": 474560.52,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "joao.amaro@veyel.pt e jorge.torrao@planirest.pt. Pedi Proposta Landlab a 24/09/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 10,
+      "nome": "ocWG24_160 Aeroporto Humberto Delgado Lisboa (AHD) Plano de Melhoria Operacional Pier",
+      "valor": 472076.18,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "gbm@teixeiraduarte.com, joao.branco.. Pedi proposta a Landlab a 04/06/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 11,
+      "nome": "ocWG24_107 HABITAÇÃO LECEIA-Barcarena",
+      "valor": 467162.18,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "ssk@teixeiraduarte.com. pedi cotação Landlab a 17/4/2024. jrebelo@ferreirabp.com e ricardino.gomes@tecnorem.pt | Falei com Ricardino em 16/02/26",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 12,
+      "nome": "ocWG24_070 Edif. 2e3 Residências Universitárias da Universidade de Lisboa",
+      "valor": 446943.48,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "fabio.brigas@constructorasanjose.com e claudiamagalhaes@tps.com.pt; Pedro Barbosa Rodrigues Pedro.Rodrigues@grupo-aca.com e emiliaalmeida@ferreirabp.com e jmr@teixeiraduarte.com | Ganhou Gabriel Couto",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 13,
+      "nome": "ocWG24_123 Cidade do Futebol",
+      "valor": 444462.44,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Sim",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Tem origem no ocWG23_190",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 14,
+      "nome": "ocWG24_062 Parque Logistico do Montijo CBRE",
+      "valor": 435108.3,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 15,
+      "nome": "ocWG24_224  Lotes 13 e 14 da Fase-III do Belas Clube de Campo",
+      "valor": 368890.74,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "antonio.leitao@engcon.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 16,
+      "nome": "ocWG24_124 Hotel Quinta do Mar",
+      "valor": 353854.51,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "manuel.pedrosa@constructorasanjose.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 17,
+      "nome": "ocWG24_200 Condomínio da Praia das Maçãs, Sintra",
+      "valor": 347237.42,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jc@detailsmind.com e antonio.goncalves@bwagroup.com.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 18,
+      "nome": "ocWG24_061 PIA.02 São Francisco de Borja, Almada",
+      "valor": 332291.87,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carlos.silva@tecnorem.pt e rsilva@grupodg.pt e claudia tps. Pedi Proposta Landlab a 29/02/2024. e sofia.martins@arliz.co | Falei com Ricardino em 16/02/26",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 19,
+      "nome": "ocWG24_246 ARISH CAPITAL PARTNERS -SOSA - SOUTH OF SALDANHA",
+      "valor": 316399.67,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "apg@teixeiraduarte.com e Sabina.Alves@baltorsteel.com. Pedi Proposta a Landlab a 27/9/24.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 20,
+      "nome": "ocWG24_226 (revisão)ocWG23_035 Jardim EDIFICIO DOMUS_VI MERCÊS - SINTRA _PAISAGISMO",
+      "valor": 305145.4,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Enviar revisão de 2024 a ricardo.goncalves@atlantinivel.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 21,
+      "nome": "ocWG24_204 Moradia Embaixador Egipto",
+      "valor": 284217.93,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carla.neto@tecniarte.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 22,
+      "nome": "ocWG24_111 Operação PIA.12 Três Vales, Almada",
+      "valor": 274219.5688,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "gil.santos@tecnorem.pt e nmano@ferreirabp.com. Pedi cotação Landlab a 16/04/2024 | Visitei a obra e enviamos proposta revista",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 23,
+      "nome": "ocWG24_026 JARDINS DO ARQUIVO HISTÓRICO ULTRAMARINO",
+      "valor": 241634.05,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jlavrador@cordivias.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 24,
+      "nome": "ocWG24_064 Quinta da Boa Esperança, Almada",
+      "valor": 232235.14,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carlos.silva@tecnorem.pt | Falei com Ricardino em 16/02/26",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 25,
+      "nome": "ocWG24_068 EXECUÇÃO DE 4 MORADIAS NA RUA DOM AFONSO HENRIQUES 478, ESTORIL",
+      "valor": 223298.22,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "fmc@mapengenharia.pt e antonio.leitao@engcon.pt e ruisilva@tps.com.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 26,
+      "nome": "ocWG24_207 CASAS DA QUINTA",
+      "valor": 222829.43,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carla.neto@tecniarte.pt e jmr@mapengenharia.pt e anabela.santos@planirest.pt; antonio.lagartixo@inspirecapital.pt. pedi proposta a Landlab a 11/09/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 27,
+      "nome": "ocWG24_196 Hotel Rural-Ericeira",
+      "valor": 216420.4,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "vasco.arez@vilaplano.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 28,
+      "nome": "ocWG24_091 Casquilho Poente, PIA06Almada",
+      "valor": 215740.03,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carlos.silva@tecnorem.pt e rsilva@grupodg.pt | Falei com Ricardino em 16/02/26",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 29,
+      "nome": "ocWG24_071 StoneCapital - Redbridge School - Tapada da Ajuda",
+      "valor": 207900.57,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "cristinamartins@visabeiraglobal.com. Pedi cotação Landlab a 13/3/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 30,
+      "nome": "ocWG24_208 PaRK INTERNATIONAL SCHOOL",
+      "valor": 203129.8,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "ppa@mapengenharia.pt e carlos.martins@planirest.pt e graca.correia@casais.pt e idiasmarques@tetris-db.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 31,
+      "nome": "ocWG24_046 Vistabella - Oeiras",
+      "valor": 202129.74,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "dario.quintal@alvesribeiro.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 32,
+      "nome": "ocWG24_149 Bairro Alfazina",
+      "valor": 191044.18,
+      "mes": "",
+      "requerente": "Tecnorem",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "nuno.vicente@tecnorem.pt (orçamento já dado em 2022). | Falei com Ricardino em 16/02/26 | SAMSIC",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 33,
+      "nome": "ocWG24_214 Moradia R alcolena 27 Restelo",
+      "valor": 185395.1,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "antonio.goncalves@bwagroup.com.pt e",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 34,
+      "nome": "ocWG24_104 2 MORADIAS NA RUA DE INGLATERRA Nº333, ESTORIL",
+      "valor": 178842.39,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "fmc@mapengenharia.pt e antonio.leitao@engcon.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 35,
+      "nome": "ocWG24_191 HAB SAO MARÇAL 2 - CARNAXIDE",
+      "valor": 172150.7,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jrebelo@ferreirabp.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 36,
+      "nome": "ocWG24_221 Escola Secundária Professor José Augusto Lucas - Oeiras - Verdes",
+      "valor": 168954.66,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "dferreira@graviner.pt (via BP). Pedi Landlab em 18/9/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 37,
+      "nome": "ocWG24_126 Rua da Verónica-Lisboa",
+      "valor": 166927.302,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "rafaelacerqueira@tps.com.pt | Ligar Nuno TPS",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 38,
+      "nome": "ocWG24_238 EB2.3 Vialonga",
+      "valor": 164157.78,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "ricardino.gomes@tecnorem.pt e cristinapereira@erf.com.pt | Falei com Ricardino em 16/02/26",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 39,
+      "nome": "ocWG24_140 Lisboa_VT_VilaTijoloAmpl.Edificios",
+      "valor": 164095.98,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "graca.correia@casais.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 40,
+      "nome": "ocWG24_176  BLUEVILLAS_São Pedro Estroril",
+      "valor": 162989.37,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "rui.marcal@asanto.pt. Pedi proposta Landlab a 28/06/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 41,
+      "nome": "ocWG24_237 Marinha - Guincho-Lote 21",
+      "valor": 160410.87,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "anne.zambon@verdeoeste.pt,",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 42,
+      "nome": "ocWG24_177 Avenida da Argentina 186, em Cascais",
+      "valor": 157824.15,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "andreramos@draftin.pt e nuno.carvalho@somafuture.com e anaalmeida@gabrielcouto.pt. Pedi orçamento a Landlab a 5/7/24.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 43,
+      "nome": "ocWG24_256 Azenhas do Mar Jake Sutcliffe",
+      "valor": 154136.59,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 44,
+      "nome": "ocWG24_021 Qt. Grafanil - Lisboa",
+      "valor": 151240.75,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "compras@pragosa.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 45,
+      "nome": "ocWG24_067 Andre Novoa-Oeiras",
+      "valor": 139612.66,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Visita ao local (Sónia+Bernardo), dia 7/3/2024. Pedido Landlab a 13/3/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 46,
+      "nome": "ocWG24_180 Moradia Rua João das Regras 7 - Cascais",
+      "valor": 135808.29,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "fabiano@belopaviana.pt. Pedi proposta a Landlab a 05/07/2024. Pedi esclarecimentos no dia 11/07/2024. Enviei também a luis.santos@x-log.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 47,
+      "nome": "ocWG24_201 Rua da Índia 20, no Estoril",
+      "valor": 134278.4,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "marilia.sepulveda@ergicon.com e andreramos@draftin.pt e jc@detailsmind.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 48,
+      "nome": "ocWG24_144 HOTEL PALÁCIO DAS PEDROSAS",
+      "valor": 132965.65,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "bruno.carregado@hci.pt e andre.hilario@somafuture.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 49,
+      "nome": "ocWG24_217 ESCOLA SECUNDARIA FERNANDO LOPES GRAÇA - CASCAIS",
+      "valor": 131867.73,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "dferreira@graviner.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 50,
+      "nome": "ocWG24_035 Área de Lazer Lumiar",
+      "valor": 125955.66,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "omep@omep.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 51,
+      "nome": "ocWG24_139 NOVO EDIFÍCIO DE ARMAZENAGEM, COMÉRCIO E SERVIÇOS- MONTIJO",
+      "valor": 119739.8,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "lucysantos@ferreirabp.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 52,
+      "nome": "ocWG24_192 MALHA 9 - ALTA DE LISBOA",
+      "valor": 118413.52,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "joao.branco@alvesribeiro.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 53,
+      "nome": "ocWG24_145 Páteo da Cordoaria",
+      "valor": 117790.25,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "beatriz.noronha@tecniarte.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 54,
+      "nome": "ocWG24_022 EMP RAINHA D AMÉLIA - LISBOA",
+      "valor": 112217.84,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "antonio.carvalho@baltor.pt | Passar lá; obra em curso",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 55,
+      "nome": "ocWG24_185 Três Vales - Almada",
+      "valor": 110189.65,
+      "mes": "",
+      "requerente": "Comparar com o 2026",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "dianapinheiro@tps.com.pt. Pedi cotação Landlab a 04/07/2024. | Priscila TPS",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 56,
+      "nome": "ocWG24_170 Loteamento das Forças Armadas",
+      "valor": 105986.52,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "catarinaferreira@tps.com.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 57,
+      "nome": "ocWG24_213 Empreendimento da Irmã Joana- 30 fogos- Porto Salvo- Oeiras",
+      "valor": 104824.46,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jcosta@grupodg.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 58,
+      "nome": "ocWG24_141 DUUO - SS Pedido de cotação paisagismo",
+      "valor": 101297.45,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "silvia.sa@alvesribeiro.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 59,
+      "nome": "ocWG24_151 UNIDADE PRIVADA DE DIÁLISE DE CASCAIS",
+      "valor": 96493.25,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "brunosantos@manuelmateusfrazao.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 60,
+      "nome": "ocWG24_025 CUPAV_Amp. Req. Centro Univ. Pe Ant. Vieira",
+      "valor": 95855.8,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carlos.santos@planirest.pt. Pedi preços, IETA, Globalpav, Icuros, SIT e Completegoroen",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 61,
+      "nome": "ocWG24_015 Travessa de Terras de Sant´Ana",
+      "valor": 93256.47,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "paula.portasio@tecniarte.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 62,
+      "nome": "ocWG24_162 PARQUE DOS CISNES - LOTE 11 - MIRAFLORES",
+      "valor": 93148.58,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jmr@mapengenharia.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 63,
+      "nome": "ocWG24_023 EMEL - CONSTRUÇÃO DO PARQUE DE ESTACIONAMENTO NA AZINHAGA DAS CARMELITAS",
+      "valor": 91034.84,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jlavrador@cordivias.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 64,
+      "nome": "ocWG24_115 PARQUE VERDE PARA TODOS - MATARRAQUE",
+      "valor": 84841.1,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jlavrador@cordivias.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 65,
+      "nome": "ocWG24_206 Casa Saurimo",
+      "valor": 80002.2,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "thiago.gomes@reformosa.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 66,
+      "nome": "ocWG24_178  Jardim Verdizela-Seixal",
+      "valor": 77680.34,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "amaliamiranda@locistudiola.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 67,
+      "nome": "ocWG24_047 Calçada da Estrela 161-163",
+      "valor": 77187.08,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "ruisilva@tps.com.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 68,
+      "nome": "ocWG24_188 Moradia Birre (Guida Rato-Cascais)",
+      "valor": 76922.58,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "guida.rato@perfectshape.pt. Pedi proposta a Landlab em 9/7/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 69,
+      "nome": "ocWG24_202 Rua dos Depósitos de Água - Cobre - Cascais e Estoril -  Cascais",
+      "valor": 74637.45,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "pedrobarbosa@horizonteamplo.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 70,
+      "nome": "ocWG24_219 PACK 4 - Pavimentos e Arranjos Exteriores",
+      "valor": 73466.35,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "anaalves@garcia.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 71,
+      "nome": "ocWG24_117 BOSQUE DE CAPARIDE",
+      "valor": 71270,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jlavrador@cordivias.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 72,
+      "nome": "ocWG24_003 Moradia em Carnaxide",
+      "valor": 70578.89,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "julianaaraujo@ncontract.pt e joana.saraiva@fcm.pt. Respostas por email em 28/03/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 73,
+      "nome": "ocWG24_131 ESCOLA ARTISTICA ANTONIO ARROIO",
+      "valor": 70435.94,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Sim",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "elianalopes@vlc-construcoes.com. Enviado revisão de Proposta em 21/11/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 74,
+      "nome": "ocWG24_228 Moradia Quinta da Marinha-Rua do Atlântico Lote 45",
+      "valor": 69372.18,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "maria.oliveira@fasquia.pt. pedi proposta landlab a 19/9/24.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 75,
+      "nome": "ocWG24_167 ESCOLA BÁSICA DO INFANTADO",
+      "valor": 64668.65,
+      "mes": "",
+      "requerente": "FCM",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "lucysantos@ferreirabp.com (peças desenhadas ver no link do email). e luis rodrigues (tecnorem) | Falei com Ricardino em 16/02/26",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 76,
+      "nome": "ocWG24_203 Edif.TomásRibeiro",
+      "valor": 64001.07,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "graca.correia@casais.pt e fmc@mapgroup.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 77,
+      "nome": "ocWG24_154 Gustavo Guimarães Diaplant",
+      "valor": 63651.21,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Verificar",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Via Bernardo",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 78,
+      "nome": "ocWG24_040 Continente Bombarral",
+      "valor": 62804.92,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "ana.valente@pericia.com.pt e amigodocampo.lda@gmail.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 79,
+      "nome": "ocWG24_146  BAIRRO DA PORTELA DE AZÓIA - SANTA IRIA DE AZÓIA",
+      "valor": 62458.61,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jlavrador@cordivias.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 80,
+      "nome": "ocWG24_001 Moradia em Sintra - São Pedro de Penaferrim",
+      "valor": 61730.55,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "luis.maciel@gandara.com.pt. Pedi cotação a Landlab a 10/01/2024. Pedido em 5/2/24, preços pavidren e medidas platibanda.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 81,
+      "nome": "ocWG24_102 PIA 14 Rua das Quintas, Almada",
+      "valor": 59329.59,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "rsilva@grupodg.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 82,
+      "nome": "ocWG24_218 Rua São Ciro, 19",
+      "valor": 59141.13,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "antonio.leitao@engcon.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 83,
+      "nome": "ocWG24_220 Empreitada HVB_Rua Dom José Bragança_Lisboa",
+      "valor": 59020.86,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "compras@pragosa.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 84,
+      "nome": "ocWG24_262 - 5 moradias em Alcabideche",
+      "valor": 56576.95,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "maraujo@comporto.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 85,
+      "nome": "ocWG24_152 Edifício José Malhoa 12, em Lisboa",
+      "valor": 56105.86,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "cristinamartins@visabeiraglobal.com e vfaleiro@tetris-db.com e pfalcato@vectormais e alexandra.rodrigues@openline.pt..comPedi proposta a Landlab a 22/05/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 86,
+      "nome": "ocWG24_076 ERPI Parede",
+      "valor": 55329.37,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "rafaelacerqueira@tps.com.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 87,
+      "nome": "ocWG24_184 Estrada do Rodízio, Colares",
+      "valor": 53741.9,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "joao.amaro@veyel.pt. Pedi esclarecimento sobre o sistema de rega em 8/7/24.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 88,
+      "nome": "ocWG24_058 Centro Funerário de Sintra",
+      "valor": 53620.79,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 89,
+      "nome": "ocWG24_113 ESTRELA 46 - 3ª FASE - PAISAGISMO",
+      "valor": 53283.62,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "ssk@teixeiraduarte.com e clima@sa-machado.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 90,
+      "nome": "ocWG24_029 4 MORADIAS-Fontanelas",
+      "valor": 52540.44,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "luispinheiro@eternalbonus.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 91,
+      "nome": "ocWG24_130 Hotel Memmo Príncipe Real",
+      "valor": 52066.96,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jorge.torrao@planirest.pt e antonio.leitao@engcon.pt e nelson.coelho@ruce.pt.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 92,
+      "nome": "ocWG24_136 Moradia Kátia & Paulo, Oeiras",
+      "valor": 51048.91,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "clima@sa-machado.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 93,
+      "nome": "ocWG24_137 Habitação de São Marçal - 40 fogos, Carnaxide (NPH05)",
+      "valor": 49773.69,
+      "mes": "",
+      "requerente": "Tecnorem",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "rafaelacerqueira@tps.com.pt e sandracruz@ferreirabp.come carlos.silva@tecnorem.pt | Falei com Ricardino em 16/02/26 | SAMSIC",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 94,
+      "nome": "ocWG24_006 Moradia Unifamiliar Av. Brasil Nº8 Santo Amaro de Oeiras",
+      "valor": 49286.84,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "sblopes@isptgroup.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 95,
+      "nome": "ocWG24_197 Rua da Torre 1830",
+      "valor": 48179.75,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 96,
+      "nome": "ocWG24_168 PARQUES DESPORTIVOS - AMADORA - LOTE 1 e 2",
+      "valor": 47090.95,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "filipa.omep@outlook.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 97,
+      "nome": "ocWG24_173 Novotel Malhoa",
+      "valor": 46909.75,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "ricardo.carvalho@openline.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 98,
+      "nome": "ocWG24_013 ALDI - Venda Nova - Amadora",
+      "valor": 46530.3,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "v.correia@plaintec.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 99,
+      "nome": "ocWG24_028 COBERTURA AJARDINADA  - Saldanha Park Hotel",
+      "valor": 45915.54,
+      "mes": "",
+      "requerente": "Pedro Fonte já não está na empresa",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "luana.soares@grupo-aca.com e pedro.rodrigues@grupo-aca.com e ruisilva@tps.com.pt e pedrofonte@omatapalo.com.pt.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 100,
+      "nome": "ocWG24_018 CM SEIXAL – REQUALIFICAÇÃO DO ESPAÇO EXTERIOR DO BAIRRO MANUEL ANDRÉ",
+      "valor": 45563.42,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jlavrador@cordivias.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 101,
+      "nome": "ocWG24_193 Continente Malveira",
+      "valor": 44693.43,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "solange.abreu@csretail.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 102,
+      "nome": "ocWG24_210 Moradia Rua Joaquim António de Aguiar",
+      "valor": 44007.56,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "ruisilva@tps.com.pt | Ligar Marina TPS final Março",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 103,
+      "nome": "ocWG24_108 Vila Martel",
+      "valor": 43711.74,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "fabiano@belopaviana.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 104,
+      "nome": "ocWG24_007 CENTRO UNIVERSITÁRIO PADRE ANTÓNIO VIEIRA - CUPAV EM LISBOA",
+      "valor": 41221.97,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "rafaelacerqueira@tps.com.pt e nelson.goncalves@somafuture.com e carlos planirest",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 105,
+      "nome": "ocWG24_096 VILLA RAPOSA-Sesimbra",
+      "valor": 40908.24,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jog@ecbuild.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 106,
+      "nome": "ocWG24_038 CASA DE FRESCO-Sintra",
+      "valor": 39988.61,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "katia.morgado.ap@gmail.com (não tendo FP Landlab comparei com outras propostas Landlab)",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 107,
+      "nome": "ocWG24_019 Riverside Downtown Hotel - Lisboa",
+      "valor": 39452.27,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "nmano@ferreirabp.com e maria.sepulveda@dstsgps.com e manuel.pedrosa@constructorasanjose.com. Pedi cotação Landlab em 15/01/2024, | Manuel pedrosa já não não está na San Jose | Carlos Oliveira 932 546886 | Pedro Matos (diretor de obra)  910800624  pedro.vieiramatos@cari.pt. eviar mail com apresentação",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 108,
+      "nome": "ocWG24_077 Jardim na Biscaia",
+      "valor": 39149.64,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Sim",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "info@claraguedes.com. Pedi cotação a Landlab a 15/3/2024",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 109,
+      "nome": "ocWG24_209 Parcela B3 - Entrecampos - Lisboa",
+      "valor": 38749.82,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "compras@pragosa.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 110,
+      "nome": "ocWG24_223 EMPREITADA DE HABITAÇÃO COLETIVA NO LOTE G2, DO PAÇO DO LUMIAR, NO ÂMBITO DO PRR” -  - localizado no Paço do Lumiar, em Lisboa",
+      "valor": 38734.45,
+      "mes": "",
+      "requerente": "Ferrreira estava em 1º",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "sandracruz@ferreirabp.com e carlos.silva@tecnorem.pt e anaalmeida@gabrielcouto.pt | Falei com Ricardino em 16/02/26",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 111,
+      "nome": "ocWG24_050 Quinta do Facho-Monte de Caparica",
+      "valor": 38405.77,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "claudiamagalhaes@tps.com.pt e nuno.carvalho@somafuture.com | Priscila TPS | enviar para priscillasoares@tps.com.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 112,
+      "nome": "ocWG24_016 RUA DR. SOUSA MARTINS – VILA FRANCA DE XIRA",
+      "valor": 38381.74,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jlavrador@cordivias.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 113,
+      "nome": "ocWG24_276 (3 Moradias Areias)",
+      "valor": 37121.55,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 114,
+      "nome": "ocWG24_063 Moradia Leceia Lote 4 - Arranjos Exteriores",
+      "valor": 36899.85,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "nuno.carvalho@somafuture.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 115,
+      "nome": "ocWG24_143 Bairro Padre Cruz - Lisboa",
+      "valor": 35547.6,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "beatrizcosta@tps.com.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 116,
+      "nome": "ocWG24_002 Edifício na Rua de Vale Formoso, 31, Parcela A – Marvila, Lisboa",
+      "valor": 35254.18,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "antonio.leitao@engcon.pt e ines.azevedo@engcon.pt. Pedido esclarecimento, de qual as espécies pretendidas em 19/9/23. e irina.ramos@constructorasanjose.com e joao.branco@alvesribeiro.pt e fmc@mapengenharia.pt.Pedi preços vasos em 5/2/24.Revisão enviado a 05/12/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 117,
+      "nome": "ocWG24_132 ATLANTIC PHARMA",
+      "valor": 35175,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "manuel.pedrosa@constructorasanjose.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 118,
+      "nome": "ocWG24_101 LIDL Vila Franca de Xira",
+      "valor": 35104.23,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "filipatriunfante@garcia.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 119,
+      "nome": "ocWG24_052 Palácio Condes de Caria - Sete Rios",
+      "valor": 34083.04,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "LX CAPITAL\n\nJosé Faria\n969 831 889",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 120,
+      "nome": "ocWG24_037 Escola Secundária Fernando Lopes Graça - MUNICÍPIO DE CASCAIS",
+      "valor": 33977.71,
+      "mes": "",
+      "requerente": "Tecnorem",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "nuno.mendes@tecnorem.pt e didia.rodrigues@wikibuild.pt | Falei com Ricardino Tecnorem em 16/02/26",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 121,
+      "nome": "ocWG24_155 Funnywarrior_Constr.Edf. Estrada Caselas Belém_Restelo",
+      "valor": 33917.16,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "marcia.carvalho@csconstrutora.com. Pedi Orçamento Landlab a 27/05/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 122,
+      "nome": "ocWG24_110 Cobertura ajardinada - E.17.24 Brogueira",
+      "valor": 33512.74,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "orcamentos@saldanhaalves.com. Pedi cotação Landlab 12/4/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 123,
+      "nome": "ocWG24_243 HOSPITAL CUF ALMADA",
+      "valor": 33394.57,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "manuel.pedrosa@constructorasanjose.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 124,
+      "nome": "ocWG24_073 Moradia Alpolentim",
+      "valor": 33315.05,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "pedro.borges@vogue-homes.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 125,
+      "nome": "ocWG24_045 Escola Secundária de São João do Estoril",
+      "valor": 33116.88,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "claudiamagalhaes@tps.com.pt e dferreira@graviner.pt e luispinheiro@nve.pt e romao.ferreira@rvpconstrucao.pt e ricardino.gomes@tecnorem.pt. Falta Orçamento cobertura verde. Pedi Landlab 22/2/24. e rui.carvalho@grupoccr.pt | Falei com Ricardino em 16/02/26",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 126,
+      "nome": "ocWG24_240 Pedro Boal-Alqueidão da Serra",
+      "valor": 32957,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "pedro_boal@hotmail.com. Pedi Proposta a Landlab a 19/09/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 127,
+      "nome": "ocWG24_211 Sede do Partido Social Democrata",
+      "valor": 32659.31,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "orcamentacao@grupofas.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 128,
+      "nome": "ocWG24_098  Barreiras Acusticas - Restelo - Gavinho",
+      "valor": 32132.39,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "leonor.traguil@by-gavinho.com (Sónia visitou em 4/4/2024). Subempreiteiro = Fusotempo. (enviado para os 2 emalis).",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 129,
+      "nome": "ocWG24_100 Várzea de Sintra",
+      "valor": 31468.13,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Liliana Ferreira <lilianaferreira@visabeiraglobal.com>;",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 130,
+      "nome": "ocWG24_084 Moradia Carlos Maleiro",
+      "valor": 31348.23,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "antonio.goncalves@bwagroup.com.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 131,
+      "nome": "ocWG24_165 Kate Dixon - Barreiras (Malveira da Serra)",
+      "valor": 31276.4,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jlavrador@cordivias.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 132,
+      "nome": "ocWG24_057 IPSS Loures-Saltarico",
+      "valor": 29739.5,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "teresaribeiro23@gmail.com. Pedi proposta Landlab a 27/2/24.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 133,
+      "nome": "ocWG24_119 Native TownHouses - Belas C.C",
+      "valor": 29223.6,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "sofia.martins@arliz.co",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 134,
+      "nome": "ocWG24_134 Creche Modular no Bairro da Boavista - SRU - Lisboa",
+      "valor": 29184.18,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "daniela.pinto@outputengenharia.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 135,
+      "nome": "ocWG24_024 Centro Cultural de Barcarena",
+      "valor": 28557.3,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "bruno.carvalho@ruce.pt. Em 13/05/2024, contato de eng. Antonio.leite, para baixar o valor da proposta.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 136,
+      "nome": "ocWG24_074 Moradia em Areias - Cascais",
+      "valor": 28078.79,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "elianalopes@vlc-construcoes.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 137,
+      "nome": "ocWG24_112 ESTRADA DE BENFICA, N.º 410 a 416",
+      "valor": 27856.44,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "rafaelacerqueira@tps.com.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 138,
+      "nome": "ocWG24_171 Vias Envolventes EB Silveira - Torres Vedras",
+      "valor": 27534.15,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "compras@pragosa.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 139,
+      "nome": "ocWG24_247 Parque Adão Barata",
+      "valor": 27179.2,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "cristinapereira@erf.com.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 140,
+      "nome": "ocWG24_055 Rua Junqueira 317",
+      "valor": 26801.27,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carlos.martins@planirest.pt. Pedi cotação a Landlab a 23/2/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 141,
+      "nome": "ocWG24_248 Praceta do Soldado-Ribamar (Mafra)",
+      "valor": 26536.06,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "VNZ",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 142,
+      "nome": "ocWG24_039 Edifícios Para a Futura Universidade na Falagueira, Amadora",
+      "valor": 25954.5,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "claudiamagalhaes@tps.com.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 143,
+      "nome": "ocWG24_017 SECRET GARDEN VILLAS (2ª Fase) em Campo de Ourique",
+      "valor": 25681.86,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carlos.martins@planirest.pt | Tiago almeida 932567132",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 144,
+      "nome": "ocWG24_150 Quinta da Bassaqueira; Azeitão_Setúbal",
+      "valor": 25650,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carlos.santos@planirest.pt (pedi cotação a landlab a 20/05/2024) e clima@sa-machado.com. Enviado revisão em 05/12/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 145,
+      "nome": "ocWG24_094 Calçada do Tarujo",
+      "valor": 24825.77,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "nuno.carvalho@somafuture.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 146,
+      "nome": "ocWG24_031 Rua Saraiva de Carvalho 177 - Lisboa",
+      "valor": 24360.4,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "nelson.goncalves@fck.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 147,
+      "nome": "ocWG24_259 Cobertura-Quinta do Perú",
+      "valor": 24356.24,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "guida.rato@perfectshape.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 148,
+      "nome": "ocWG24_090 MORADIA EM ALCABIDECHE",
+      "valor": 23211.23,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carlos.ferreira@complai.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 149,
+      "nome": "ocWG24_231 Pego Longo - Rua das Flores - Sintra",
+      "valor": 22631.46,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carlos.silva@tecnorem.pt e emiliaalmeida@ferreirabp.com e joao@vnz.pt e luana.soares@grupo-aca.com | Falei com Ricardino em 16/02/26",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 150,
+      "nome": "ocWG24_054 Quinta da Glória-Palmela",
+      "valor": 22504.49,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "pedrogmatos@yahoo.com.\nVisita a 28/02/2024-12H00.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 151,
+      "nome": "ocWG24_166 PARQUE INFANTIL DE ALPRIATE - VIALONGA",
+      "valor": 22042.5,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jlavrador@cordivias.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 152,
+      "nome": "ocWG24_014 Moradia S. João Tojal",
+      "valor": 21444.99,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "nuno.carvalho@somafuture.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 153,
+      "nome": "ocWG24_085 Sobralinho-Vialonga",
+      "valor": 20358.55,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jlavrador@cordivias.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 154,
+      "nome": "ocWG24_239 PALMELA SUMMER, S.A",
+      "valor": 20094,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "joao.amaral@wikibuild.pt e carla.lima@baltor.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 155,
+      "nome": "ocWG24_072 Cobertura Malveira da Serra",
+      "valor": 19675.29,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "bruno.pereira@interiorunico.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 156,
+      "nome": "ocWG24_053 Cobertura Verde-Lavre",
+      "valor": 19667.5,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "alexandraimar@gmail.com. Pedi Proposta Landlab em 22/2/2024",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 157,
+      "nome": "ocWG24_036 Cobertura Verde-Caldas da Rainha",
+      "valor": 19434.55,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "tiago.tgmconst@gmail.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 158,
+      "nome": "ocWG24_222 Moradia Birre Cascais",
+      "valor": 19105.99,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jbalmeida@workingarden.pt. Pedi proposta Landlab a 5/9/24.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 159,
+      "nome": "ocWG24_169 PRAÇA AFONSO DO PAÇO",
+      "valor": 18229.44,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jlavrador@cordivias.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 160,
+      "nome": "ocWG24_181 Adelino Amaro da Costa 121 - Green Screen Vegetação",
+      "valor": 16136,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Vi BP. vitorserro@rbdl.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 161,
+      "nome": "ocWG24_172 Inspire Capital Barreira Campo de Ourique",
+      "valor": 15995,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 162,
+      "nome": "ocWG24_133 Paulo Viana - Barreiras Acústicas, Estoril",
+      "valor": 15010.99,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Helena Nobre -  geral@cardial.pt;\nPaulo Viana - pparenteviana@gmail.com;\nVisitado por Sónia a 06/05/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 163,
+      "nome": "ocWG24_216 Kerakoll, expo lisboa - Transfor",
+      "valor": 14974.29,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "cesar.lopes@transforgroup.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 164,
+      "nome": "ocWG24_274 Marechal Carmona 574",
+      "valor": 14817,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 165,
+      "nome": "ocWG24_083 Portela de Azóia - Santa Iria Azoia - Loures",
+      "valor": 14405.42,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "\\",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 166,
+      "nome": "ocWG24_271 Dr. Jorge Coutinho Remodelação",
+      "valor": 14357,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 167,
+      "nome": "ocWG24_128 Quinta do Perú 306,  Sesimbra",
+      "valor": 13348.23,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "nuno.carvalho@somafuture.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 168,
+      "nome": "ocWG24_099 Barreiras - Alta de Lisboa",
+      "valor": 13110.24,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "khd@onelatitude.com. Visitado por Sónia a 28/03/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 169,
+      "nome": "ocWG24_227 Terraço Moscavide Sra. Carla Branco",
+      "valor": 12814.5,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 170,
+      "nome": "ocWG24_093 Sist. Captação àgua-Saltarico",
+      "valor": 12338,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 171,
+      "nome": "ocWG24_187 Barreiras Nuno Eugénio - Moradia Birre",
+      "valor": 12335.02,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "guilherme@livewood.pt. Visitado a 5/7/2024,",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 172,
+      "nome": "ocWG24_183 R Entrecampos 43_Fase2",
+      "valor": 12101.68,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "antonio.goncalves@bwagroup.com.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 173,
+      "nome": "ocWG24_075 Centro de Artes Portela - Leiria",
+      "valor": 12052.38,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jorge.martins@hortirelva.pt (via margarida)",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 174,
+      "nome": "ocWG24_043 Socicorreia - Varino 06, Lisboa",
+      "valor": 11969.2,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Rui Lopes, Eng.º 964 267 309\nruilopes@socicorreia.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 175,
+      "nome": "ocWG24_277 Barreiras Quinta do Prior",
+      "valor": 11911.5,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 176,
+      "nome": "ocWG24_059 Carlos Esteves - Amora",
+      "valor": 11725.62,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Carlos Esteves\n912591918\ncesteves99@googlemail.com.\nVisita a 28/02/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 177,
+      "nome": "ocWG24_121 Palácio do Machadinho",
+      "valor": 11456,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "pedro.monteiro@transforgroup.com e vasco.duarte@transforgroup.com.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 178,
+      "nome": "ocWG24_270 Dr. Gonçalo Real Remodelação",
+      "valor": 10952.6,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 179,
+      "nome": "ocWG24_081 Rodrigo Fragoso Fernandes - Estoril",
+      "valor": 10532.5,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Visita a 19/03/2024.\nContacto: 912228979\nEmail: rfragosofernandes@dreamdealer.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 180,
+      "nome": "ocWG24_179 Adega Mãe",
+      "valor": 10103.89,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "mloureiro@adegamae.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 181,
+      "nome": "ocWG24_056 Jardim Vertical - Rua Rodrigues Sampaio, 12-16 (2024)",
+      "valor": 9686,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carlos.santos@planirest.pt. Pedi cotação a Landlab a 26/2/2024. Pedi medidas da parede.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 182,
+      "nome": "ocWG24_194 Edifícios de Habitação Municipal do Bairro Marechal Carmona (Edifício J3)",
+      "valor": 9168.12,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Ruce - 937730622",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 183,
+      "nome": "ocWG24_182 Moradia Pera - Trafaria",
+      "valor": 8981.1,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "joaocarmosilva@viplace.pt (pedi proposta Landlab a 03/07/2024)",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 184,
+      "nome": "ocWG24_175 Jardim Vertical São Marçal",
+      "valor": 8766.9,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "ricardino.gomes@tecnorem.pt. Pedi proposta Landlab a 28/06/2024. | Falei com Ricardino em 16/02/26",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 185,
+      "nome": "ocWG24_042 Victor Reis - Monte Estoril",
+      "valor": 8515.32,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Victor Reis 910638719\nvictor@blurenova.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 186,
+      "nome": "ocWG24_142 Rua do Salitre, Lisboa",
+      "valor": 8508.23,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "nuno.carvalho@somafuture.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 187,
+      "nome": "ocWG24_105 Horto Campo Grande",
+      "valor": 8443,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "fca@hortodocampogrande.com (via margarida )",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 188,
+      "nome": "ocWG24_147 Arruda dos vinhos-Jardim Vertical",
+      "valor": 8308,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "rserra@metrical.pt (sónia visitou em 21/05/2024)",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 189,
+      "nome": "ocWG24_272 Dra Maria José Barros Remodelação",
+      "valor": 8275.2,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 190,
+      "nome": "ocWG24_122 Cond São Sebastião Frente Piscina",
+      "valor": 7969,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 191,
+      "nome": "ocWG24_161 Habitação Municipal do Bairro Marechal Carmona",
+      "valor": 7936.62,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carlos.silva@tecnorem.pt | Falei com Ricardino em 16/02/26",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 192,
+      "nome": "ocWG24_087 Escola Palmela",
+      "valor": 7909.5,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "MARGARIDA= CSSILVA@CM-PALMELA.PT",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 193,
+      "nome": "ocWG24_103 MATRIZAUTO MONTIJO",
+      "valor": 7801.16,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "diana.fernandes@baltor.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 194,
+      "nome": "ocWG24_255 Priscila e Pedro Almeida Moradia Mafra",
+      "valor": 7751.45,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "pedronmcalmeida@gmail.com;\nprishmsilva@gmail.com\nReunião a 24/09/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 195,
+      "nome": "ocWG24_089 Bairro da Encarnação em Lisboa, Rua 20, Nº21",
+      "valor": 7595.28,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Sim",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "rjpsantos@gmail.com\n\n1ª Orçamento enviado a 25/03/2024\n\nRevisão do Orçamento Reenviada a 24/04/2024",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 196,
+      "nome": "ocWG24_198 Parede Verde+Cobertura (Quinta da Marinha-Inplanta)",
+      "valor": 7220.87,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "inplanta@gmail.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 197,
+      "nome": "ocWG24_215 Cobertura Verdizela",
+      "valor": 6611.4,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "orcamentos@definicaosolida.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 198,
+      "nome": "ocWG24_190 Moradia Bernardo Jesus - Bairro da Encarnação",
+      "valor": 6175,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Bernardo Jesus - 965 008 075",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 199,
+      "nome": "ocWG24_127 Xana Gavancha",
+      "valor": 6000,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 200,
+      "nome": "ocWG24_129 Elisabete Santos-Marinha Grande",
+      "valor": 5387.6,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "elisabetesantos00@gmail.com. Pedi orçamento Landlab a 06/05/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 201,
+      "nome": "ocWG24_082 Frederico Fragoso Fernandes - Estoril",
+      "valor": 5386.02,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Visita a 19/03(2024.\nContacto: \n\nEmail: fredericoff@gmail.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 202,
+      "nome": "ocWG24_020 Escola Secundária de Porto de Mós",
+      "valor": 5369.81,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "ricardopiairo@gabrielcouto.pt. Pedi cotação Landlab a 15/01/2024",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 203,
+      "nome": "ocWG24_258 António Marreiros R. Ivens 6, Lisboa",
+      "valor": 5294.04,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Reunião a 01/10/2014.\na.marreiros@sapo.pt\nEnvio de Revisão a  07/01/2024",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 204,
+      "nome": "ocWG24_229 Foz do Sisandro",
+      "valor": 5142.6,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 205,
+      "nome": "ocWG24_118 RUA COMBATENTES DO ULTRAMAR-Odivelas",
+      "valor": 5054.4,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jlavrador@cordivias.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 206,
+      "nome": "ocWG24_138 Aprendizes (Cobertura Verde)",
+      "valor": 4773,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "lmarcon.arq@gmail.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 207,
+      "nome": "ocWG24_109 Catarina Braziel-Moradia Oeiras",
+      "valor": 4603.3,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Sim",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "catarinabraziel@gmail.com>",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 208,
+      "nome": "ocWG24_080 Marta Araújo - Parede",
+      "valor": 3767.2,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Visita a 08/03/2024. Contacto: 918771968\nemail: marta.ketuta@gmail.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 209,
+      "nome": "ocWG24_051 Bancos e papeleiras Templo",
+      "valor": 3690,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Sim",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 210,
+      "nome": "ocWG24_097 Elena Tejada-Carcavelos",
+      "valor": 3644,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "<a href=\"mailto:elena.tejada@sapo.pt\">elena.tejada@sapo.pt</a>Sónia Visitou em 4/4/2024",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 211,
+      "nome": "ocWG24_069 MORADIA NO MURTAL",
+      "valor": 3600.13,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "r4.remodelacoes@gmail.com. Pedi cotação Landlab a 12/03/2024. Pedido desenhos em DWG",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 212,
+      "nome": "ocWG24_032 JF AJUDA - EXECUÇÃO DE DOIS PROJECTOS",
+      "valor": 3415.52,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jlavrador@cordivias.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 213,
+      "nome": "ocWG24_049 Portão Aprendizes",
+      "valor": 3250,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Ludmila Macron",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 214,
+      "nome": "ocWG24_048 Ana Bela Rogado - Charneca da Caparica",
+      "valor": 3179,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Ana Bela Rogado\n966740117\n\nrogadoanabela@gmail.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 215,
+      "nome": "ocWG24_120 Hélio Ribeiro (Foz do Arelho)",
+      "valor": 3020,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "jardins.obidos@gmail.com. Visitado a 19/04/2024",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 216,
+      "nome": "ocWG24_114 Amoreiras Floreira",
+      "valor": 2947,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Sim",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "rj@lajecapital.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 217,
+      "nome": "ocWG24_106 Remod_Edifício_Santogal_Abrunheira",
+      "valor": 2328,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carlos.santos@planirest.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 218,
+      "nome": "ocWG24_044 Duarte Veiga da Cunha - Estoril",
+      "valor": 2207.8,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Sim",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Duarte Veiga da Cunha\n912 789 139\nd.cunha@adp.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 219,
+      "nome": "ocWG24_195 Daniel Viana (Painel Extra)",
+      "valor": 2096.43,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Sim",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Daniel Viana (via BP)",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 220,
+      "nome": "ocWG24_060 Carlos Silva - Livramento",
+      "valor": 1842.84,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Carlos Silva\n915696556\ncarlosmndsilva@gmail.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 221,
+      "nome": "ocWG24_027 Socicorreia SECXXI 16",
+      "valor": 1582,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Sim",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "ruilopes@socicorreia.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 222,
+      "nome": "ocWG24_233 Rega Teatro Variedades",
+      "valor": 1460,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Sim",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 223,
+      "nome": "ocWG24_158 MUO - Cotação Acessos Rodoviários",
+      "valor": 880,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Parcialmente",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "via jp@wegarden.pt (jose.lopo.carvalho@mota-engil.pt)",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 224,
+      "nome": "ocWG24_009 Rodrigo Vilhena",
+      "valor": 790,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Enviado a 11/01/2024",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 225,
+      "nome": "ocWG24_079 Alexandre Sloop",
+      "valor": 780,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "portsloop@yahoo.com",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 226,
+      "nome": "ocWG24_189 Hotel na Rua Rosa Araújo 37-39 em Lisboa",
+      "valor": 710,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Verificar",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "carlos.martins@planirest.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 227,
+      "nome": "ocWG24_030 Infinity ME Plantas",
+      "valor": 568.88,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 228,
+      "nome": "ocWG24_010 Hipoteses-Hotel Czar",
+      "valor": 26.4,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Enviado a 11/01/2024",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 229,
+      "nome": "ocWG24_135 REQUALIFICAÇÃO DA PRAÇA DA REPUBLICA EM SACAVÉM",
+      "valor": 0,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "compras@pragosa.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 230,
+      "nome": "ocWG24_174 Nidia Saba - Quinta Patino",
+      "valor": 0,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Visitado a 21/06/2024",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 231,
+      "nome": "ocWG24_186 Escola Básica do Bairro Novo - CMSeixal",
+      "valor": 0,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Enviado",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "daniela.pinto@outputengenharia.pt",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 232,
+      "nome": "ocWG24_205 Parque das Nações Lote 1.11 – Lisboa",
+      "valor": 0,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "pedro.caneco@hci.pt. Pedi proposta a Landlab a 5/9/24.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 233,
+      "nome": "ocWG24_212 Av. Duque D'Ávila - Pedido de cotação para solução acústica",
+      "valor": 0,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "stefano.silva@ktl.pt. Pedi proposta Landlab a 13/09/2024",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 234,
+      "nome": "ocWG24_225 Programadores LX Living",
+      "valor": 0,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 235,
+      "nome": "ocWG24_261 IGREJA BEATO - Vedação Acústica",
+      "valor": 0,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "nuno.farinha@constructorasanjose.com | Nuno Farinha 914381992",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 236,
+      "nome": "ocWG24_266 ALDEIA DA ROCA",
+      "valor": 0,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Passou para 2024",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "Eliana Lopes <elianalopes@vlc-construcoes.com> E andre.monteiro@fcm.pt. Foi pedido cotação Landlab a 7/9/23. Pedido inf. sobre tamanho de vasos em 13/9/23. Pediram revisão em 14/10/2024.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 237,
+      "nome": "ocWG24_268 Parque dos Cisnes Lotes 4, 5, 6, 7 e 23",
+      "valor": 0,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 238,
+      "nome": "ocWG24_008 Creche do Centro D. Bosco",
+      "valor": null,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "claudiamagalhaes@tps.com.pt e vitor.afonso@nowxxi.pt. Pedi esclarecimento em 16/01/2024, sist. rega.",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 239,
+      "nome": "ocWG24_066 Hotel Biarritz em Cascais",
+      "valor": null,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [
+        {
+          "texto": "vital.l.rodrigues@unni.pt. Pedi cotação a Landlab a 7/3/2024",
+          "at": "2024-01-01T00:00:00Z"
+        }
+      ],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 240,
+      "nome": "ocWG24_078 Nuno Vaz Areias do Seixo",
+      "valor": null,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": 241,
+      "nome": "ocWG24_088 Daniel Viana-Contenção de Terras",
+      "valor": null,
+      "mes": "",
+      "requerente": "",
+      "responsavel": "",
+      "concurso": "",
+      "visita": "",
+      "adjudicado": "Não",
+      "dataArranque": "",
+      "emailEnvio": "",
+      "dataEnvio": "",
+      "grauOverride": "",
+      "notas": "",
+      "notasHist": [],
+      "lembretes": [],
+      "addedAt": "2024-01-01T00:00:00Z"
+    }
+  ]
+}

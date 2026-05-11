@@ -33,7 +33,12 @@
     "dataEnvio": "",
     "grauOverride": "",
     "notas": "",
-    "notasHist": [],
+    "notasHist": [
+      {
+        "texto": "dono de obra vai lançar novos concursos",
+        "at": "2026-05-11T16:06:05.240Z"
+      }
+    ],
     "lembretes": [],
     "addedAt": "2025-01-01T00:00:00Z"
   },

@@ -75,6 +75,9 @@
   tr.is-lost td { opacity: 0.45; }
   tr.is-lost:hover td { opacity: 0.65; background: var(--bg2); }
   tr.is-lost .name-main { text-decoration: line-through; text-decoration-color: var(--text3); }
+  tr.is-won td { background: rgba(45,106,79,0.06); }
+  tr.is-won:hover td { background: rgba(45,106,79,0.11); }
+  tr.is-won td:first-child { border-left: 3px solid var(--accent); padding-left: 9px; }
   .col-n{width:40px} .col-oc{width:200px} .col-v{width:110px;text-align:right}
   td.vc{text-align:right;font-variant-numeric:tabular-nums;font-size:12px;color:var(--text2)}
   .col-mes{width:80px} .col-req{width:105px} .col-resp{width:60px;text-align:center}
@@ -740,10 +743,11 @@ function render(){
   tbody.innerHTML=s.map(r=>{
     const hasN=(r.notasHist&&r.notasHist.length>0)||!!(r.notas&&r.notas.trim()), novo=isNew(r);
     const isLost=(r.adjudicado||'').toLowerCase()==='não'||r.adjudicado==='Não';
+    const isWon=(r.adjudicado||'').toLowerCase()==='sim';
     const code=(r.nome.match(/^(ocWG\S+)/)||[])[1]||'';
     const nm=r.nome.replace(/^ocWG\S+\s*/,'').trim();
     const req=(r.requerente||'').length>16?r.requerente.slice(0,15)+'…':(r.requerente||'');
-    return `<tr onclick="openDetail(${r.id})" ondblclick="openForm(${r.id})" class="${hasN?'has-nota ':''}${novo?'is-new':''}${isLost?' is-lost':''}">
+    return `<tr onclick="openDetail(${r.id})" ondblclick="openForm(${r.id})" class="${hasN?'has-nota ':''}${novo?'is-new':''}${isLost?' is-lost':''}${isWon?' is-won':''}">
       <td style="color:var(--text3);font-size:11px">${r.id}</td>
       <td style="text-align:center;font-size:11px;color:var(--text3);font-weight:600">${r._year||''}</td>
       <td title="${r.nome}"><span class="code-tag">${code}</span><span>${nm}${novo?'<span class="b-new">novo</span>':''}</span></td>

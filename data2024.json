@@ -92,7 +92,13 @@
         "at": "2024-01-01T00:00:00Z"
       }
     ],
-    "lembretes": [],
+    "lembretes": [
+      {
+        "data": "2026-05-28",
+        "texto": "Bernardo ligar a António Madeira",
+        "done": false
+      }
+    ],
     "addedAt": "2024-01-01T00:00:00Z"
   },
   {

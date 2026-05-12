@@ -1350,7 +1350,13 @@
         "at": "2024-01-01T00:00:00Z"
       }
     ],
-    "lembretes": [],
+    "lembretes": [
+      {
+        "data": "2026-05-12",
+        "texto": "BP ligar a Raquel ou Bruno",
+        "done": false
+      }
+    ],
     "addedAt": "2024-01-01T00:00:00Z"
   },
   {

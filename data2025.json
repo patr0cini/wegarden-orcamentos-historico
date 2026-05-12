@@ -104,7 +104,12 @@
     "dataEnvio": "",
     "grauOverride": "",
     "notas": "",
-    "notasHist": [],
+    "notasHist": [
+      {
+        "texto": "Teixeira Duarte e Casais estão na shortlist; Gestão está a ser feita pela Verdoeste",
+        "at": "2026-05-12T09:10:39.873Z"
+      }
+    ],
     "lembretes": [],
     "addedAt": "2025-01-01T00:00:00Z"
   },
